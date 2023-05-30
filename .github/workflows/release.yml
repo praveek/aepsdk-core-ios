@@ -102,7 +102,7 @@ jobs:
       if: ${{ github.event.inputs.action_tag == 'yes' }}  
       shell: bash
       run: |
-        RULES_VERSION="(pod spec cat AEPSignal | jq '.version' | tr -d '"')"
+        RULES_VERSION=$(pod spec cat AEPRulesEngine | jq '.version' | tr -d '"')
         echo $RULES_VERSION
         echo RULES_VERSION=$RULES_VERSION >> $GITHUB_ENV
 
