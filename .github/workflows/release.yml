@@ -98,16 +98,24 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-    # - name: Upload - AEPRulesEngine          
-    #   uses: actions/upload-release-asset@v1
-    #   if: ${{ github.event.inputs.action_tag == 'yes' }}  
-    #   with:
-    #     upload_url: ${{ steps.create_release.outputs.upload_url }} 
-    #     asset_path: ./build/AEPRulesEngine.xcframework.zip
-    #     asset_name: AEPRulesEngine.xcframework.zip
-    #     asset_content_type: application/zip
-    #   env:
-    #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    - name: Detect AEPRulesEngine Version
+      if: ${{ github.event.inputs.action_tag == 'yes' }}  
+      shell: bash
+      run: |
+        RULES_VERSION="(pod spec cat AEPSignal | jq '.version' | tr -d '"')"
+        echo $RULES_VERSION
+        echo RULES_VERSION=$RULES_VERSION >> $GITHUB_ENV
+
+    - name: Upload - AEPRulesEngine          
+      uses: actions/upload-release-asset@v1
+      if: ${{ github.event.inputs.action_tag == 'yes' }}  
+      with:
+        upload_url: ${{ steps.create_release.outputs.upload_url }} 
+        asset_path: ./build/AEPRulesEngine.xcframework.zip
+        asset_name: AEPRulesEngine-${{ env.RULES_VERSION }}.xcframework.zip
+        asset_content_type: application/zip
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
     - name: Upload - AEPServices
       uses: actions/upload-release-asset@v1
