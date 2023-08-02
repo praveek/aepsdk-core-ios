@@ -1,5 +1,5 @@
 Pod::Spec.new do |s|
-  s.name             = "AEPServices"
+  s.name             = "ACPAnalytics"
   s.version          = "3.9.0"
   s.summary          = "Servcies library for Adobe Experience Platform Mobile SDK. Written and maintained by Adobe."
   s.description      = <<-DESC
