@@ -1,5 +1,5 @@
 Pod::Spec.new do |s|
-  s.name             = "AEPCore"
+  s.name             = "ACPCore"
   s.version          = "3.9.0"
   s.summary          = "Core library for Adobe Experience Platform Mobile SDK. Written and maintained by Adobe."
   s.description      = <<-DESC
@@ -9,7 +9,7 @@ Pod::Spec.new do |s|
   s.license          = 'Apache V2'
   s.author           = "Adobe Experience Platform SDK Team"
   s.source           = { :git => "https://github.com/adobe/aepsdk-core-ios", :tag => s.version.to_s }
-  s.deprecated_in_favor_of = 'NewerAEPCore'
+  s.deprecated_in_favor_of = 'AEPCore'
 
   s.ios.deployment_target = '10.0'
   s.tvos.deployment_target = '10.0'
