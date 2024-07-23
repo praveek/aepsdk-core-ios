@@ -191,7 +191,8 @@ public extension Extension {
 
     /// Register a event preprocessor
     /// - Parameter preprocessor: The `EventPreprocessor`
-    internal func registerPreprocessor(_ preprocessor: @escaping EventPreprocessor) {
-        EventHub.shared.registerPreprocessor(preprocessor)
+    ///  This is an internal API and not a breaking change.
+    internal func registerPreprocessor( _ tenant: Tenant, _ preprocessor: @escaping EventPreprocessor) {
+        EventHub.instance(tenant: tenant)?.registerPreprocessor(preprocessor)
     }
 }

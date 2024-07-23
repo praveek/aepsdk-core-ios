@@ -21,7 +21,8 @@ public typealias EventPreprocessor = (Event) -> Event
 
 /// Responsible for delivering events to listeners and maintaining registered extension's lifecycle.
 final class EventHub {
-    private let LOG_TAG = "EventHub"
+    private let LOG_TAG: String
+    private let tenant: Tenant
     private let eventHubQueue = DispatchQueue(label: "com.adobe.eventHub.queue")
     private var registeredExtensions = ThreadSafeDictionary<String, ExtensionContainer>(identifier: "com.adobe.eventHub.registeredExtensions.queue")
     private let eventNumberMap = ThreadSafeDictionary<UUID, Int>(identifier: "com.adobe.eventHub.eventNumber.queue")
@@ -30,18 +31,26 @@ final class EventHub {
     private let eventQueue = OperationOrderer<Event>("EventHub")
     private var preprocessors = ThreadSafeArray<EventPreprocessor>(identifier: "com.adobe.eventHub.preprocessors.queue")
     private var started = false // true if the `EventHub` is started, false otherwise. Should only be accessed from within the `eventHubQueue`
-    private var eventHistory = EventHistory()
+    private var eventHistory: EventHistory?
     private var wrapperType: WrapperType = .none
+
+    // Keeping it for now to limit build failures.
     #if DEBUG
-        public internal(set) static var shared = EventHub()
+        public internal(set) static var shared = EventHub.create(tenant: .default)
     #else
-        internal static let shared = EventHub()
+        internal static let shared = EventHub.create(tenant: .default)
     #endif
 
     // MARK: - Internal API
 
     /// Creates a new instance of `EventHub`
-    init() {
+    init(tenant: Tenant) {
+        LOG_TAG = "EventHub".tenantAwareName(for: tenant)
+        self.tenant = tenant        
+
+        Log.debug(label: LOG_TAG, "Initializing EventHub for tenant \(tenant.description)")
+
+        eventHistory = EventHistory(tenant: tenant)
         // setup a place-holder extension container for `EventHub` so we can shared and retrieve state
         registerExtension(EventHubPlaceholderExtension.self, completion: { _ in })
 
@@ -136,7 +145,7 @@ final class EventHub {
             // Init the extension on a dedicated queue
             let extensionTypeName = "com.adobe.eventhub.extension.\(type.typeName)"
             let extensionQueue = DispatchQueue(label: extensionTypeName)
-            let extensionContainer = ExtensionContainer(extensionTypeName, type, extensionQueue, completion: completion)
+            let extensionContainer = ExtensionContainer(self, tenant, extensionTypeName, type, extensionQueue, completion: completion)
             self.registeredExtensions[type.typeName] = extensionContainer
             Log.debug(label: self.LOG_TAG, "\(type.typeName) successfully registered.")
         }

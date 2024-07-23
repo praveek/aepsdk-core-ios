@@ -16,9 +16,9 @@ import AEPServices
 class EventHistoryDatabase {
     let LOG_PREFIX = "Event History Database"
 
+    let tenant: Tenant
     let dispatchQueue: DispatchQueue
-
-    let dbName = "com.adobe.eventHistory"
+    let dbName: String
     let dbFilePath: FileManager.SearchPathDirectory = .cachesDirectory
 
     let tableName = "Events"
@@ -30,8 +30,11 @@ class EventHistoryDatabase {
     /// Default initializer.
     ///
     /// - Returns `nil` if the `DispatchQueue` cannot be initialized.
-    init?(dispatchQueue: DispatchQueue) {
+    init?(tenant: Tenant, dispatchQueue: DispatchQueue) {
+        self.tenant = tenant
         self.dispatchQueue = dispatchQueue
+        self.dbName = "com.adobe.eventHistory".tenantAwareName(for: tenant)
+
         guard createTable() else {
             Log.warning(label: LOG_PREFIX, "Failed to initialize Event History Database.")
             return nil
