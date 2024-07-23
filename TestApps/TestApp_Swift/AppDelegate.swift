@@ -20,7 +20,7 @@ import BackgroundTasks
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-    private let LAUNCH_ENVIRONMENT_FILE_ID = ""
+    private let LAUNCH_ENVIRONMENT_FILE_ID = "94f571f308d5/bc09a100649b/launch-6df8e3eea690-development"
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
@@ -30,12 +30,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                           Lifecycle.self,
                           Signal.self]
 
+        // Default tenant
         MobileCore.registerExtensions(extensions, {
             MobileCore.configureWith(appId: self.LAUNCH_ENVIRONMENT_FILE_ID)
 
             if appState != .background {
                 MobileCore.lifecycleStart(additionalContextData: nil)
             }
+        })
+
+
+        // Initializing a new tenant. Only extensions which are tenant aware will be initialized for this instance.
+        let partnerTenant = "partner"
+        let partnerLaunchEnvironmentID = "94f571f308d5/39273f51e930/launch-00ac4ce72151-development"
+
+        MobileCore.registerExtensions(tenantID: partnerTenant, extensions, {
+            MobileCore.configureWith(tenantID: partnerTenant, appId: partnerLaunchEnvironmentID)
         })
 
         // If testing background, edit test app scheme -> options -> background fetch -> Check "launch app due to background fetch event"

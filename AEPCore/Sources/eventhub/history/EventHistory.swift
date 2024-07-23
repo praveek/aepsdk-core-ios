@@ -20,8 +20,9 @@ class EventHistory {
     /// Default initializer.
     ///
     /// - Returns `nil` if the database cannot be initialized.
-    init?() {
-        guard let db = EventHistoryDatabase(dispatchQueue: DispatchQueue.init(label: "EventHistory")) else {
+    init?(tenant: Tenant) {
+        let dispatchQueue = DispatchQueue.init(label: "EventHistory".tenantAwareName(for: tenant))
+        guard let db = EventHistoryDatabase(tenant: tenant, dispatchQueue: dispatchQueue) else {
             return nil
         }
 

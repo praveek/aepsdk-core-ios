@@ -16,7 +16,8 @@ import Foundation
 /// Core extension for the Adobe Experience Platform SDK
 @objc(AEPMobileCore)
 public final class MobileCore: NSObject {
-    private static let LOG_TAG = "MobileCore"
+    internal static let LOG_TAG = "MobileCore"
+
     /// Current version of the Core extension
     @objc public static var extensionVersion: String {
         let wrapperType = EventHub.shared.getWrapperType()

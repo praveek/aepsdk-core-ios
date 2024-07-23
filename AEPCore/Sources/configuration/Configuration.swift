@@ -14,35 +14,46 @@ import AEPServices
 import Foundation
 
 /// Responsible for retrieving the configuration of the SDK and updating the shared state and dispatching configuration updates through the `EventHub`
-class Configuration: NSObject, Extension {
+class Configuration: NSObject, TenantAwareExtension {
     let runtime: ExtensionRuntime
+    let tenant: Tenant
     let name = ConfigurationConstants.EXTENSION_NAME
     let friendlyName = ConfigurationConstants.FRIENDLY_NAME
     public static let extensionVersion = ConfigurationConstants.EXTENSION_VERSION
     let metadata: [String: String]? = nil
 
-    private let dataStore = NamedCollectionDataStore(name: ConfigurationConstants.DATA_STORE_NAME)
+    private let dataStore: NamedCollectionDataStore
     private var appIdManager: LaunchIDManager
     private var configState: ConfigurationState // should only be modified/used within the event queue
-    private let rulesEngine: LaunchRulesEngine
-    private let retryQueue = DispatchQueue(label: "com.adobe.configuration.retry")
     private let rulesEngineName = "\(ConfigurationConstants.EXTENSION_NAME).rulesengine"
+    private let rulesEngine: LaunchRulesEngine
+    private let retryQueue: DispatchQueue
     private var retryConfigurationCounter: Double = 1
 
     // MARK: - Extension
 
     /// Initializes the Configuration extension and it's dependencies
-    required init(runtime: ExtensionRuntime) {
+    required init(runtime: ExtensionRuntime, tenant: Tenant) {
         self.runtime = runtime
-        rulesEngine = LaunchRulesEngine(name: rulesEngineName, extensionRuntime: runtime)
+        self.tenant = tenant
 
+        rulesEngine = LaunchRulesEngine(name: rulesEngineName.tenantAwareName(for: tenant), extensionRuntime: runtime)
+
+        dataStore = NamedCollectionDataStore(name: ConfigurationConstants.DATA_STORE_NAME.tenantAwareName(for: tenant))
         appIdManager = LaunchIDManager(dataStore: dataStore)
         configState = ConfigurationState(dataStore: dataStore, configDownloader: ConfigurationDownloader())
+
+        retryQueue = DispatchQueue(label: "com.adobe.configuration.retry".tenantAwareName(for: tenant))
+    }
+
+    /// Initializes the Configuration extension and it's dependencies
+    required convenience init(runtime: ExtensionRuntime) {
+        self.init(runtime: runtime, tenant: .default)
     }
 
     /// Invoked when the Configuration extension has been registered by the `EventHub`, this results in the Configuration extension loading the first configuration for the SDK
     func onRegistered() {
-        registerPreprocessor(rulesEngine.process(event:))
+        registerPreprocessor(tenant, rulesEngine.process(event:))
 
         registerListener(type: EventType.configuration, source: EventSource.requestContent, listener: receiveConfigurationRequest(event:))
 

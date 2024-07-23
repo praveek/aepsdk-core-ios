@@ -17,35 +17,43 @@ import Foundation
 @objc(AEPMobileSignal)
 @available(iOSApplicationExtension, unavailable)
 @available(tvOSApplicationExtension, unavailable)
-public class Signal: NSObject, Extension {
+public class Signal: NSObject, TenantAwareExtension {
 
     private(set) var hitQueue: HitQueuing
 
     // MARK: - Extension
 
     public let runtime: ExtensionRuntime
+    public let tenant: Tenant
 
     public let name = SignalConstants.EXTENSION_NAME
     public let friendlyName = SignalConstants.FRIENDLY_NAME
     public static let extensionVersion = SignalConstants.EXTENSION_VERSION
     public let metadata: [String: String]? = nil
 
-    public required init?(runtime: ExtensionRuntime) {
-        guard let dataQueue = ServiceProvider.shared.dataQueueService.getDataQueue(label: name) else {
+    public required init?(runtime: ExtensionRuntime, tenant: Tenant) {
+        self.runtime = runtime
+        self.tenant = tenant
+
+        let dataQueueName = name.tenantAwareName(for: tenant)
+        guard let dataQueue = ServiceProvider.shared.dataQueueService.getDataQueue(label: dataQueueName) else {
             Log.error(label: SignalConstants.LOG_PREFIX, "Signal extension could not be initialized - unable to create a DataQueue.")
             return nil
         }
-
         hitQueue = PersistentHitQueue(dataQueue: dataQueue, processor: SignalHitProcessor())
-        self.runtime = runtime
 
         super.init()
+    }
+
+    public required convenience init?(runtime: ExtensionRuntime) {
+        self.init(runtime: runtime, tenant: .default)
     }
 
     // internal init added for testing
     internal init(runtime: ExtensionRuntime, hitQueue: HitQueuing) {
         self.hitQueue = hitQueue
         self.runtime = runtime
+        self.tenant = .default
         super.init()
     }
 
