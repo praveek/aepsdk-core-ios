@@ -17,7 +17,7 @@ public protocol TenantAwareExtension: Extension {
     /// Initializes the extension with the provided runtime and tenant.
     ///
     /// - Parameters:
-    ///   - runtime: The runtime environment in which the extension will operate.
+    ///   - runtime: The `ExtensionRuntime` instance to communicate with `EventHub`.
     ///   - tenant: The tenant configuration for the extension.
     /// - Returns: An instance of the extension, or nil if initialization fails.
     init?(runtime: ExtensionRuntime, tenant: Tenant)    
