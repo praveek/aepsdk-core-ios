@@ -26,7 +26,7 @@ public protocol ExtensionRuntime {
     ///   - type: `EventType` to listen for
     ///   - source: `EventSource` to listen for
     ///   - listener: Function or closure which will be invoked whenever the `EventHub` receives an `Event` matching `type` and `source`
-    func registerListener(type: String, source: String, listener: @escaping EventListener)
+    func registerListener(type: String, source: String, listener: EventListener)
 
     // MARK: - Event control
 

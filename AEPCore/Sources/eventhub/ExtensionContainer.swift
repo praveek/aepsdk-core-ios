@@ -108,9 +108,9 @@ extension ExtensionContainer: ExtensionRuntime {
         eventHub.unregisterExtension(type(of: exten), completion: {_ in })
     }
 
-    public func registerListener(type: String, source: String, listener: @escaping EventListener) {
-        let listenerContainer = EventListenerContainer(listener: listener, type: type, source: source, triggerEventId: nil, timeoutTask: nil)
-        eventListeners.append(listenerContainer)
+    public func registerListener(type: String, source: String, listener: EventListener) {
+        // let listenerContainer = EventListenerContainer(listener: listener, type: type, source: source, triggerEventId: nil, timeoutTask: nil)
+        // eventListeners.append(listenerContainer)
     }
 
     func registerResponseListener(triggerEvent: Event, timeout: TimeInterval, listener: @escaping EventResponseListener) {
