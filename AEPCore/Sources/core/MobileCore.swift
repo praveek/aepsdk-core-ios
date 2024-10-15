@@ -84,7 +84,7 @@ public final class MobileCore: NSObject {
     /// Registers the extension from MobileCore
     /// - Parameter exten: The extension to be registered
     @objc(registerExtension:completion:)
-    public static func registerExtension(_ exten: Extension.Type, _ completion: (() -> Void)? = nil) {
+    public static func registerExtension(_ exten: Extension.Type, _ completion: (() -> Void)?) {
         EventHub.shared.registerExtension(exten) { _ in
             EventHub.shared.shareEventHubSharedState()
             completion?()
@@ -93,7 +93,7 @@ public final class MobileCore: NSObject {
 
     /// Unregisters the extension from MobileCore
     /// - Parameter exten: The extension to be unregistered
-    @objc(unregisterExtension:completion:)
+    @objc(unRegisterExtension:completion:)
     public static func unregisterExtension(_ exten: Extension.Type, _ completion: (() -> Void)? = nil) {
         EventHub.shared.unregisterExtension(exten) { _ in
             completion?()
