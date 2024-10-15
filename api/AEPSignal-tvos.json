@@ -1,0 +1,2947 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "AEPSignal",
+    "printedName": "AEPSignal",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "AEPCore",
+        "printedName": "AEPCore",
+        "declKind": "Import",
+        "moduleName": "AEPSignal"
+      },
+      {
+        "kind": "Import",
+        "name": "AEPServices",
+        "printedName": "AEPServices",
+        "declKind": "Import",
+        "moduleName": "AEPSignal"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AEPSignal"
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftOnoneSupport",
+        "printedName": "SwiftOnoneSupport",
+        "declKind": "Import",
+        "moduleName": "AEPSignal"
+      },
+      {
+        "kind": "Import",
+        "name": "_Concurrency",
+        "printedName": "_Concurrency",
+        "declKind": "Import",
+        "moduleName": "AEPSignal"
+      },
+      {
+        "kind": "Import",
+        "name": "_StringProcessing",
+        "printedName": "_StringProcessing",
+        "declKind": "Import",
+        "moduleName": "AEPSignal"
+      },
+      {
+        "kind": "Import",
+        "name": "_SwiftConcurrencyShims",
+        "printedName": "_SwiftConcurrencyShims",
+        "declKind": "Import",
+        "moduleName": "AEPSignal"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "Signal",
+        "printedName": "Signal",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "hitQueue",
+            "printedName": "hitQueue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "HitQueuing",
+                "printedName": "any AEPServices.HitQueuing",
+                "usr": "s:11AEPServices10HitQueuingP"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9AEPSignal6SignalC8hitQueue11AEPServices10HitQueuing_pvp",
+            "mangledName": "$s9AEPSignal6SignalC8hitQueue11AEPServices10HitQueuing_pvp",
+            "moduleName": "AEPSignal",
+            "isOpen": true,
+            "declAttributes": [
+              "SetterAccess",
+              "HasStorage"
+            ],
+            "fixedbinaryorder": 0,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "HitQueuing",
+                    "printedName": "any AEPServices.HitQueuing",
+                    "usr": "s:11AEPServices10HitQueuingP"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9AEPSignal6SignalC8hitQueue11AEPServices10HitQueuing_pvg",
+                "mangledName": "$s9AEPSignal6SignalC8hitQueue11AEPServices10HitQueuing_pvg",
+                "moduleName": "AEPSignal",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "runtime",
+            "printedName": "runtime",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ExtensionRuntime",
+                "printedName": "any AEPCore.ExtensionRuntime",
+                "usr": "c:@M@AEPCore@objc(pl)AEPExtensionRuntime"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@AEPSignal@objc(cs)AEPMobileSignal(py)runtime",
+            "mangledName": "$s9AEPSignal6SignalC7runtime7AEPCore16ExtensionRuntime_pvp",
+            "moduleName": "AEPSignal",
+            "objc_name": "runtime",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "HasStorage"
+            ],
+            "fixedbinaryorder": 1,
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ExtensionRuntime",
+                    "printedName": "any AEPCore.ExtensionRuntime",
+                    "usr": "c:@M@AEPCore@objc(pl)AEPExtensionRuntime"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AEPSignal@objc(cs)AEPMobileSignal(im)runtime",
+                "mangledName": "$s9AEPSignal6SignalC7runtime7AEPCore16ExtensionRuntime_pvg",
+                "moduleName": "AEPSignal",
+                "implicit": true,
+                "objc_name": "runtime",
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "name",
+            "printedName": "name",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@AEPSignal@objc(cs)AEPMobileSignal(py)name",
+            "mangledName": "$s9AEPSignal6SignalC4nameSSvp",
+            "moduleName": "AEPSignal",
+            "objc_name": "name",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "ObjC",
+              "HasStorage"
+            ],
+            "fixedbinaryorder": 2,
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AEPSignal@objc(cs)AEPMobileSignal(im)name",
+                "mangledName": "$s9AEPSignal6SignalC4nameSSvg",
+                "moduleName": "AEPSignal",
+                "implicit": true,
+                "objc_name": "name",
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "friendlyName",
+            "printedName": "friendlyName",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@AEPSignal@objc(cs)AEPMobileSignal(py)friendlyName",
+            "mangledName": "$s9AEPSignal6SignalC12friendlyNameSSvp",
+            "moduleName": "AEPSignal",
+            "objc_name": "friendlyName",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "ObjC",
+              "HasStorage"
+            ],
+            "fixedbinaryorder": 3,
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AEPSignal@objc(cs)AEPMobileSignal(im)friendlyName",
+                "mangledName": "$s9AEPSignal6SignalC12friendlyNameSSvg",
+                "moduleName": "AEPSignal",
+                "implicit": true,
+                "objc_name": "friendlyName",
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "extensionVersion",
+            "printedName": "extensionVersion",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@AEPSignal@objc(cs)AEPMobileSignal(cpy)extensionVersion",
+            "mangledName": "$s9AEPSignal6SignalC16extensionVersionSSvpZ",
+            "moduleName": "AEPSignal",
+            "static": true,
+            "objc_name": "extensionVersion",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "ObjC",
+              "HasStorage"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AEPSignal@objc(cs)AEPMobileSignal(cm)extensionVersion",
+                "mangledName": "$s9AEPSignal6SignalC16extensionVersionSSvgZ",
+                "moduleName": "AEPSignal",
+                "static": true,
+                "implicit": true,
+                "objc_name": "extensionVersion",
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "metadata",
+            "printedName": "metadata",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String : Swift.String]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@AEPSignal@objc(cs)AEPMobileSignal(py)metadata",
+            "mangledName": "$s9AEPSignal6SignalC8metadataSDyS2SGSgvp",
+            "moduleName": "AEPSignal",
+            "objc_name": "metadata",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "ObjC",
+              "HasStorage"
+            ],
+            "fixedbinaryorder": 4,
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "[Swift.String : Swift.String]?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Dictionary",
+                        "printedName": "[Swift.String : Swift.String]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:SD"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AEPSignal@objc(cs)AEPMobileSignal(im)metadata",
+                "mangledName": "$s9AEPSignal6SignalC8metadataSDyS2SGSgvg",
+                "moduleName": "AEPSignal",
+                "implicit": true,
+                "objc_name": "metadata",
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(runtime:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "AEPSignal.Signal?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Signal",
+                    "printedName": "AEPSignal.Signal",
+                    "usr": "c:@M@AEPSignal@objc(cs)AEPMobileSignal"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ExtensionRuntime",
+                "printedName": "any AEPCore.ExtensionRuntime",
+                "usr": "c:@M@AEPCore@objc(pl)AEPExtensionRuntime"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@AEPSignal@objc(cs)AEPMobileSignal(im)initWithRuntime:",
+            "mangledName": "$s9AEPSignal6SignalC7runtimeACSg7AEPCore16ExtensionRuntime_p_tcfc",
+            "moduleName": "AEPSignal",
+            "objc_name": "initWithRuntime:",
+            "declAttributes": [
+              "ObjC",
+              "Required"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(runtime:hitQueue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Signal",
+                "printedName": "AEPSignal.Signal",
+                "usr": "c:@M@AEPSignal@objc(cs)AEPMobileSignal"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ExtensionRuntime",
+                "printedName": "any AEPCore.ExtensionRuntime",
+                "usr": "c:@M@AEPCore@objc(pl)AEPExtensionRuntime"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "HitQueuing",
+                "printedName": "any AEPServices.HitQueuing",
+                "usr": "s:11AEPServices10HitQueuingP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:9AEPSignal6SignalC7runtime8hitQueueAC7AEPCore16ExtensionRuntime_p_11AEPServices10HitQueuing_ptcfc",
+            "mangledName": "$s9AEPSignal6SignalC7runtime8hitQueueAC7AEPCore16ExtensionRuntime_p_11AEPServices10HitQueuing_ptcfc",
+            "moduleName": "AEPSignal",
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "onRegistered",
+            "printedName": "onRegistered()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@AEPSignal@objc(cs)AEPMobileSignal(im)onRegistered",
+            "mangledName": "$s9AEPSignal6SignalC12onRegisteredyyF",
+            "moduleName": "AEPSignal",
+            "isOpen": true,
+            "objc_name": "onRegistered",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onUnregistered",
+            "printedName": "onUnregistered()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@AEPSignal@objc(cs)AEPMobileSignal(im)onUnregistered",
+            "mangledName": "$s9AEPSignal6SignalC14onUnregisteredyyF",
+            "moduleName": "AEPSignal",
+            "isOpen": true,
+            "objc_name": "onUnregistered",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "readyForEvent",
+            "printedName": "readyForEvent(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Event",
+                "printedName": "AEPCore.Event",
+                "usr": "c:@M@AEPCore@objc(cs)AEPEvent"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@AEPSignal@objc(cs)AEPMobileSignal(im)readyForEvent:",
+            "mangledName": "$s9AEPSignal6SignalC13readyForEventySb7AEPCore0E0CF",
+            "moduleName": "AEPSignal",
+            "isOpen": true,
+            "objc_name": "readyForEvent:",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Signal",
+                "printedName": "AEPSignal.Signal",
+                "usr": "c:@M@AEPSignal@objc(cs)AEPMobileSignal"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@AEPSignal@objc(cs)AEPMobileSignal(im)init",
+            "mangledName": "$s9AEPSignal6SignalCACycfc",
+            "moduleName": "AEPSignal",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@AEPSignal@objc(cs)AEPMobileSignal",
+        "mangledName": "$s9AEPSignal6SignalC",
+        "moduleName": "AEPSignal",
+        "isOpen": true,
+        "objc_name": "AEPMobileSignal",
+        "declAttributes": [
+          "Available",
+          "Available",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "hasMissingDesignatedInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Extension",
+            "printedName": "Extension",
+            "usr": "c:@M@AEPCore@objc(pl)AEPExtension",
+            "mangledName": "$s7AEPCore9ExtensionP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "SignalConstants",
+        "printedName": "SignalConstants",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "EXTENSION_NAME",
+            "printedName": "EXTENSION_NAME",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9AEPSignal15SignalConstantsO14EXTENSION_NAMESSvpZ",
+            "mangledName": "$s9AEPSignal15SignalConstantsO14EXTENSION_NAMESSvpZ",
+            "moduleName": "AEPSignal",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9AEPSignal15SignalConstantsO14EXTENSION_NAMESSvgZ",
+                "mangledName": "$s9AEPSignal15SignalConstantsO14EXTENSION_NAMESSvgZ",
+                "moduleName": "AEPSignal",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "FRIENDLY_NAME",
+            "printedName": "FRIENDLY_NAME",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9AEPSignal15SignalConstantsO13FRIENDLY_NAMESSvpZ",
+            "mangledName": "$s9AEPSignal15SignalConstantsO13FRIENDLY_NAMESSvpZ",
+            "moduleName": "AEPSignal",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9AEPSignal15SignalConstantsO13FRIENDLY_NAMESSvgZ",
+                "mangledName": "$s9AEPSignal15SignalConstantsO13FRIENDLY_NAMESSvgZ",
+                "moduleName": "AEPSignal",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "EXTENSION_VERSION",
+            "printedName": "EXTENSION_VERSION",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9AEPSignal15SignalConstantsO17EXTENSION_VERSIONSSvpZ",
+            "mangledName": "$s9AEPSignal15SignalConstantsO17EXTENSION_VERSIONSSvpZ",
+            "moduleName": "AEPSignal",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9AEPSignal15SignalConstantsO17EXTENSION_VERSIONSSvgZ",
+                "mangledName": "$s9AEPSignal15SignalConstantsO17EXTENSION_VERSIONSSvgZ",
+                "moduleName": "AEPSignal",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "DATASTORE_NAME",
+            "printedName": "DATASTORE_NAME",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9AEPSignal15SignalConstantsO14DATASTORE_NAMESSvpZ",
+            "mangledName": "$s9AEPSignal15SignalConstantsO14DATASTORE_NAMESSvpZ",
+            "moduleName": "AEPSignal",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9AEPSignal15SignalConstantsO14DATASTORE_NAMESSvgZ",
+                "mangledName": "$s9AEPSignal15SignalConstantsO14DATASTORE_NAMESSvgZ",
+                "moduleName": "AEPSignal",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "LOG_PREFIX",
+            "printedName": "LOG_PREFIX",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9AEPSignal15SignalConstantsO10LOG_PREFIXSSvpZ",
+            "mangledName": "$s9AEPSignal15SignalConstantsO10LOG_PREFIXSSvpZ",
+            "moduleName": "AEPSignal",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9AEPSignal15SignalConstantsO10LOG_PREFIXSSvgZ",
+                "mangledName": "$s9AEPSignal15SignalConstantsO10LOG_PREFIXSSvgZ",
+                "moduleName": "AEPSignal",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "TypeDecl",
+            "name": "Configuration",
+            "printedName": "Configuration",
+            "children": [
+              {
+                "kind": "Var",
+                "name": "NAME",
+                "printedName": "NAME",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:9AEPSignal15SignalConstantsO13ConfigurationO4NAMESSvpZ",
+                "mangledName": "$s9AEPSignal15SignalConstantsO13ConfigurationO4NAMESSvpZ",
+                "moduleName": "AEPSignal",
+                "static": true,
+                "declAttributes": [
+                  "HasInitialValue",
+                  "HasStorage"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:9AEPSignal15SignalConstantsO13ConfigurationO4NAMESSvgZ",
+                    "mangledName": "$s9AEPSignal15SignalConstantsO13ConfigurationO4NAMESSvgZ",
+                    "moduleName": "AEPSignal",
+                    "static": true,
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "GLOBAL_PRIVACY",
+                "printedName": "GLOBAL_PRIVACY",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:9AEPSignal15SignalConstantsO13ConfigurationO14GLOBAL_PRIVACYSSvpZ",
+                "mangledName": "$s9AEPSignal15SignalConstantsO13ConfigurationO14GLOBAL_PRIVACYSSvpZ",
+                "moduleName": "AEPSignal",
+                "static": true,
+                "declAttributes": [
+                  "HasInitialValue",
+                  "HasStorage"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:9AEPSignal15SignalConstantsO13ConfigurationO14GLOBAL_PRIVACYSSvgZ",
+                    "mangledName": "$s9AEPSignal15SignalConstantsO13ConfigurationO14GLOBAL_PRIVACYSSvgZ",
+                    "moduleName": "AEPSignal",
+                    "static": true,
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Enum",
+            "usr": "s:9AEPSignal15SignalConstantsO13ConfigurationO",
+            "mangledName": "$s9AEPSignal15SignalConstantsO13ConfigurationO",
+            "moduleName": "AEPSignal",
+            "isEnumExhaustive": true,
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Sendable",
+                "printedName": "Sendable",
+                "usr": "s:s8SendableP",
+                "mangledName": "$ss8SendableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "BitwiseCopyable",
+                "printedName": "BitwiseCopyable",
+                "usr": "s:s15BitwiseCopyableP",
+                "mangledName": "$ss15BitwiseCopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              }
+            ]
+          },
+          {
+            "kind": "TypeDecl",
+            "name": "Defaults",
+            "printedName": "Defaults",
+            "children": [
+              {
+                "kind": "Var",
+                "name": "TIMEOUT",
+                "printedName": "TIMEOUT",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:9AEPSignal15SignalConstantsO8DefaultsO7TIMEOUTSdvpZ",
+                "mangledName": "$s9AEPSignal15SignalConstantsO8DefaultsO7TIMEOUTSdvpZ",
+                "moduleName": "AEPSignal",
+                "static": true,
+                "declAttributes": [
+                  "HasInitialValue",
+                  "HasStorage"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Double",
+                        "printedName": "Swift.Double",
+                        "usr": "s:Sd"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:9AEPSignal15SignalConstantsO8DefaultsO7TIMEOUTSdvgZ",
+                    "mangledName": "$s9AEPSignal15SignalConstantsO8DefaultsO7TIMEOUTSdvgZ",
+                    "moduleName": "AEPSignal",
+                    "static": true,
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "CONTENT_TYPE",
+                "printedName": "CONTENT_TYPE",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:9AEPSignal15SignalConstantsO8DefaultsO12CONTENT_TYPESSvpZ",
+                "mangledName": "$s9AEPSignal15SignalConstantsO8DefaultsO12CONTENT_TYPESSvpZ",
+                "moduleName": "AEPSignal",
+                "static": true,
+                "declAttributes": [
+                  "HasInitialValue",
+                  "HasStorage"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:9AEPSignal15SignalConstantsO8DefaultsO12CONTENT_TYPESSvgZ",
+                    "mangledName": "$s9AEPSignal15SignalConstantsO8DefaultsO12CONTENT_TYPESSvgZ",
+                    "moduleName": "AEPSignal",
+                    "static": true,
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Enum",
+            "usr": "s:9AEPSignal15SignalConstantsO8DefaultsO",
+            "mangledName": "$s9AEPSignal15SignalConstantsO8DefaultsO",
+            "moduleName": "AEPSignal",
+            "isEnumExhaustive": true,
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Sendable",
+                "printedName": "Sendable",
+                "usr": "s:s8SendableP",
+                "mangledName": "$ss8SendableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "BitwiseCopyable",
+                "printedName": "BitwiseCopyable",
+                "usr": "s:s15BitwiseCopyableP",
+                "mangledName": "$ss15BitwiseCopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              }
+            ]
+          },
+          {
+            "kind": "TypeDecl",
+            "name": "ConsequenceTypes",
+            "printedName": "ConsequenceTypes",
+            "children": [
+              {
+                "kind": "Var",
+                "name": "POSTBACK",
+                "printedName": "POSTBACK",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:9AEPSignal15SignalConstantsO16ConsequenceTypesO8POSTBACKSSvpZ",
+                "mangledName": "$s9AEPSignal15SignalConstantsO16ConsequenceTypesO8POSTBACKSSvpZ",
+                "moduleName": "AEPSignal",
+                "static": true,
+                "declAttributes": [
+                  "HasInitialValue",
+                  "HasStorage"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:9AEPSignal15SignalConstantsO16ConsequenceTypesO8POSTBACKSSvgZ",
+                    "mangledName": "$s9AEPSignal15SignalConstantsO16ConsequenceTypesO8POSTBACKSSvgZ",
+                    "moduleName": "AEPSignal",
+                    "static": true,
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "PII",
+                "printedName": "PII",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:9AEPSignal15SignalConstantsO16ConsequenceTypesO3PIISSvpZ",
+                "mangledName": "$s9AEPSignal15SignalConstantsO16ConsequenceTypesO3PIISSvpZ",
+                "moduleName": "AEPSignal",
+                "static": true,
+                "declAttributes": [
+                  "HasInitialValue",
+                  "HasStorage"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:9AEPSignal15SignalConstantsO16ConsequenceTypesO3PIISSvgZ",
+                    "mangledName": "$s9AEPSignal15SignalConstantsO16ConsequenceTypesO3PIISSvgZ",
+                    "moduleName": "AEPSignal",
+                    "static": true,
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "OPEN_URL",
+                "printedName": "OPEN_URL",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:9AEPSignal15SignalConstantsO16ConsequenceTypesO8OPEN_URLSSvpZ",
+                "mangledName": "$s9AEPSignal15SignalConstantsO16ConsequenceTypesO8OPEN_URLSSvpZ",
+                "moduleName": "AEPSignal",
+                "static": true,
+                "declAttributes": [
+                  "HasInitialValue",
+                  "HasStorage"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:9AEPSignal15SignalConstantsO16ConsequenceTypesO8OPEN_URLSSvgZ",
+                    "mangledName": "$s9AEPSignal15SignalConstantsO16ConsequenceTypesO8OPEN_URLSSvgZ",
+                    "moduleName": "AEPSignal",
+                    "static": true,
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Enum",
+            "usr": "s:9AEPSignal15SignalConstantsO16ConsequenceTypesO",
+            "mangledName": "$s9AEPSignal15SignalConstantsO16ConsequenceTypesO",
+            "moduleName": "AEPSignal",
+            "isEnumExhaustive": true,
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Sendable",
+                "printedName": "Sendable",
+                "usr": "s:s8SendableP",
+                "mangledName": "$ss8SendableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "BitwiseCopyable",
+                "printedName": "BitwiseCopyable",
+                "usr": "s:s15BitwiseCopyableP",
+                "mangledName": "$ss15BitwiseCopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              }
+            ]
+          },
+          {
+            "kind": "TypeDecl",
+            "name": "EventDataKeys",
+            "printedName": "EventDataKeys",
+            "children": [
+              {
+                "kind": "Var",
+                "name": "TRIGGERED_CONSEQUENCE",
+                "printedName": "TRIGGERED_CONSEQUENCE",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:9AEPSignal15SignalConstantsO13EventDataKeysO21TRIGGERED_CONSEQUENCESSvpZ",
+                "mangledName": "$s9AEPSignal15SignalConstantsO13EventDataKeysO21TRIGGERED_CONSEQUENCESSvpZ",
+                "moduleName": "AEPSignal",
+                "static": true,
+                "declAttributes": [
+                  "HasInitialValue",
+                  "HasStorage"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:9AEPSignal15SignalConstantsO13EventDataKeysO21TRIGGERED_CONSEQUENCESSvgZ",
+                    "mangledName": "$s9AEPSignal15SignalConstantsO13EventDataKeysO21TRIGGERED_CONSEQUENCESSvgZ",
+                    "moduleName": "AEPSignal",
+                    "static": true,
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "ID",
+                "printedName": "ID",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:9AEPSignal15SignalConstantsO13EventDataKeysO2IDSSvpZ",
+                "mangledName": "$s9AEPSignal15SignalConstantsO13EventDataKeysO2IDSSvpZ",
+                "moduleName": "AEPSignal",
+                "static": true,
+                "declAttributes": [
+                  "HasInitialValue",
+                  "HasStorage"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:9AEPSignal15SignalConstantsO13EventDataKeysO2IDSSvgZ",
+                    "mangledName": "$s9AEPSignal15SignalConstantsO13EventDataKeysO2IDSSvgZ",
+                    "moduleName": "AEPSignal",
+                    "static": true,
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "DETAIL",
+                "printedName": "DETAIL",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:9AEPSignal15SignalConstantsO13EventDataKeysO6DETAILSSvpZ",
+                "mangledName": "$s9AEPSignal15SignalConstantsO13EventDataKeysO6DETAILSSvpZ",
+                "moduleName": "AEPSignal",
+                "static": true,
+                "declAttributes": [
+                  "HasInitialValue",
+                  "HasStorage"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:9AEPSignal15SignalConstantsO13EventDataKeysO6DETAILSSvgZ",
+                    "mangledName": "$s9AEPSignal15SignalConstantsO13EventDataKeysO6DETAILSSvgZ",
+                    "moduleName": "AEPSignal",
+                    "static": true,
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "TYPE",
+                "printedName": "TYPE",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:9AEPSignal15SignalConstantsO13EventDataKeysO4TYPESSvpZ",
+                "mangledName": "$s9AEPSignal15SignalConstantsO13EventDataKeysO4TYPESSvpZ",
+                "moduleName": "AEPSignal",
+                "static": true,
+                "declAttributes": [
+                  "HasInitialValue",
+                  "HasStorage"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:9AEPSignal15SignalConstantsO13EventDataKeysO4TYPESSvgZ",
+                    "mangledName": "$s9AEPSignal15SignalConstantsO13EventDataKeysO4TYPESSvgZ",
+                    "moduleName": "AEPSignal",
+                    "static": true,
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "CONTENT_TYPE",
+                "printedName": "CONTENT_TYPE",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:9AEPSignal15SignalConstantsO13EventDataKeysO12CONTENT_TYPESSvpZ",
+                "mangledName": "$s9AEPSignal15SignalConstantsO13EventDataKeysO12CONTENT_TYPESSvpZ",
+                "moduleName": "AEPSignal",
+                "static": true,
+                "declAttributes": [
+                  "HasInitialValue",
+                  "HasStorage"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:9AEPSignal15SignalConstantsO13EventDataKeysO12CONTENT_TYPESSvgZ",
+                    "mangledName": "$s9AEPSignal15SignalConstantsO13EventDataKeysO12CONTENT_TYPESSvgZ",
+                    "moduleName": "AEPSignal",
+                    "static": true,
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "TEMPLATE_BODY",
+                "printedName": "TEMPLATE_BODY",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:9AEPSignal15SignalConstantsO13EventDataKeysO13TEMPLATE_BODYSSvpZ",
+                "mangledName": "$s9AEPSignal15SignalConstantsO13EventDataKeysO13TEMPLATE_BODYSSvpZ",
+                "moduleName": "AEPSignal",
+                "static": true,
+                "declAttributes": [
+                  "HasInitialValue",
+                  "HasStorage"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:9AEPSignal15SignalConstantsO13EventDataKeysO13TEMPLATE_BODYSSvgZ",
+                    "mangledName": "$s9AEPSignal15SignalConstantsO13EventDataKeysO13TEMPLATE_BODYSSvgZ",
+                    "moduleName": "AEPSignal",
+                    "static": true,
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "TEMPLATE_URL",
+                "printedName": "TEMPLATE_URL",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:9AEPSignal15SignalConstantsO13EventDataKeysO12TEMPLATE_URLSSvpZ",
+                "mangledName": "$s9AEPSignal15SignalConstantsO13EventDataKeysO12TEMPLATE_URLSSvpZ",
+                "moduleName": "AEPSignal",
+                "static": true,
+                "declAttributes": [
+                  "HasInitialValue",
+                  "HasStorage"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:9AEPSignal15SignalConstantsO13EventDataKeysO12TEMPLATE_URLSSvgZ",
+                    "mangledName": "$s9AEPSignal15SignalConstantsO13EventDataKeysO12TEMPLATE_URLSSvgZ",
+                    "moduleName": "AEPSignal",
+                    "static": true,
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "TIMEOUT",
+                "printedName": "TIMEOUT",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:9AEPSignal15SignalConstantsO13EventDataKeysO7TIMEOUTSSvpZ",
+                "mangledName": "$s9AEPSignal15SignalConstantsO13EventDataKeysO7TIMEOUTSSvpZ",
+                "moduleName": "AEPSignal",
+                "static": true,
+                "declAttributes": [
+                  "HasInitialValue",
+                  "HasStorage"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:9AEPSignal15SignalConstantsO13EventDataKeysO7TIMEOUTSSvgZ",
+                    "mangledName": "$s9AEPSignal15SignalConstantsO13EventDataKeysO7TIMEOUTSSvgZ",
+                    "moduleName": "AEPSignal",
+                    "static": true,
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "URL",
+                "printedName": "URL",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:9AEPSignal15SignalConstantsO13EventDataKeysO3URLSSvpZ",
+                "mangledName": "$s9AEPSignal15SignalConstantsO13EventDataKeysO3URLSSvpZ",
+                "moduleName": "AEPSignal",
+                "static": true,
+                "declAttributes": [
+                  "HasInitialValue",
+                  "HasStorage"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:9AEPSignal15SignalConstantsO13EventDataKeysO3URLSSvgZ",
+                    "mangledName": "$s9AEPSignal15SignalConstantsO13EventDataKeysO3URLSSvgZ",
+                    "moduleName": "AEPSignal",
+                    "static": true,
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Enum",
+            "usr": "s:9AEPSignal15SignalConstantsO13EventDataKeysO",
+            "mangledName": "$s9AEPSignal15SignalConstantsO13EventDataKeysO",
+            "moduleName": "AEPSignal",
+            "isEnumExhaustive": true,
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Sendable",
+                "printedName": "Sendable",
+                "usr": "s:s8SendableP",
+                "mangledName": "$ss8SendableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "BitwiseCopyable",
+                "printedName": "BitwiseCopyable",
+                "usr": "s:s15BitwiseCopyableP",
+                "mangledName": "$ss15BitwiseCopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:9AEPSignal15SignalConstantsO",
+        "mangledName": "$s9AEPSignal15SignalConstantsO",
+        "moduleName": "AEPSignal",
+        "isEnumExhaustive": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "BitwiseCopyable",
+            "printedName": "BitwiseCopyable",
+            "usr": "s:s15BitwiseCopyableP",
+            "mangledName": "$ss15BitwiseCopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "SignalHit",
+        "printedName": "SignalHit",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "url",
+            "printedName": "url",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "URL",
+                "printedName": "Foundation.URL",
+                "usr": "s:10Foundation3URLV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9AEPSignal9SignalHitV3url10Foundation3URLVvp",
+            "mangledName": "$s9AEPSignal9SignalHitV3url10Foundation3URLVvp",
+            "moduleName": "AEPSignal",
+            "declAttributes": [
+              "HasStorage"
+            ],
+            "fixedbinaryorder": 0,
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "URL",
+                    "printedName": "Foundation.URL",
+                    "usr": "s:10Foundation3URLV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9AEPSignal9SignalHitV3url10Foundation3URLVvg",
+                "mangledName": "$s9AEPSignal9SignalHitV3url10Foundation3URLVvg",
+                "moduleName": "AEPSignal",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "postBody",
+            "printedName": "postBody",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9AEPSignal9SignalHitV8postBodySSSgvp",
+            "mangledName": "$s9AEPSignal9SignalHitV8postBodySSSgvp",
+            "moduleName": "AEPSignal",
+            "declAttributes": [
+              "HasStorage"
+            ],
+            "fixedbinaryorder": 1,
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9AEPSignal9SignalHitV8postBodySSSgvg",
+                "mangledName": "$s9AEPSignal9SignalHitV8postBodySSSgvg",
+                "moduleName": "AEPSignal",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "contentType",
+            "printedName": "contentType",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9AEPSignal9SignalHitV11contentTypeSSSgvp",
+            "mangledName": "$s9AEPSignal9SignalHitV11contentTypeSSSgvp",
+            "moduleName": "AEPSignal",
+            "declAttributes": [
+              "HasStorage"
+            ],
+            "fixedbinaryorder": 2,
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9AEPSignal9SignalHitV11contentTypeSSSgvg",
+                "mangledName": "$s9AEPSignal9SignalHitV11contentTypeSSSgvg",
+                "moduleName": "AEPSignal",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "timeout",
+            "printedName": "timeout",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Double?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9AEPSignal9SignalHitV7timeoutSdSgvp",
+            "mangledName": "$s9AEPSignal9SignalHitV7timeoutSdSgvp",
+            "moduleName": "AEPSignal",
+            "declAttributes": [
+              "HasStorage"
+            ],
+            "fixedbinaryorder": 3,
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Double?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Double",
+                        "printedName": "Swift.Double",
+                        "usr": "s:Sd"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9AEPSignal9SignalHitV7timeoutSdSgvg",
+                "mangledName": "$s9AEPSignal9SignalHitV7timeoutSdSgvg",
+                "moduleName": "AEPSignal",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "event",
+            "printedName": "event",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Event",
+                "printedName": "AEPCore.Event",
+                "usr": "c:@M@AEPCore@objc(cs)AEPEvent"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9AEPSignal9SignalHitV5event7AEPCore5EventCvp",
+            "mangledName": "$s9AEPSignal9SignalHitV5event7AEPCore5EventCvp",
+            "moduleName": "AEPSignal",
+            "declAttributes": [
+              "HasStorage"
+            ],
+            "fixedbinaryorder": 4,
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Event",
+                    "printedName": "AEPCore.Event",
+                    "usr": "c:@M@AEPCore@objc(cs)AEPEvent"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9AEPSignal9SignalHitV5event7AEPCore5EventCvg",
+                "mangledName": "$s9AEPSignal9SignalHitV5event7AEPCore5EventCvg",
+                "moduleName": "AEPSignal",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "any Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9AEPSignal9SignalHitV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s9AEPSignal9SignalHitV6encode2toys7Encoder_p_tKF",
+            "moduleName": "AEPSignal",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "SignalHit",
+                "printedName": "AEPSignal.SignalHit",
+                "usr": "s:9AEPSignal9SignalHitV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:9AEPSignal9SignalHitV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s9AEPSignal9SignalHitV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "AEPSignal",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(url:postBody:contentType:timeout:event:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "SignalHit",
+                "printedName": "AEPSignal.SignalHit",
+                "usr": "s:9AEPSignal9SignalHitV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URL",
+                "printedName": "Foundation.URL",
+                "usr": "s:10Foundation3URLV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Double?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Event",
+                "printedName": "AEPCore.Event",
+                "usr": "c:@M@AEPCore@objc(cs)AEPEvent"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:9AEPSignal9SignalHitV3url8postBody11contentType7timeout5eventAC10Foundation3URLV_SSSgALSdSg7AEPCore5EventCtcfc",
+            "mangledName": "$s9AEPSignal9SignalHitV3url8postBody11contentType7timeout5eventAC10Foundation3URLV_SSSgALSdSg7AEPCore5EventCtcfc",
+            "moduleName": "AEPSignal",
+            "implicit": true,
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:9AEPSignal9SignalHitV",
+        "mangledName": "$s9AEPSignal9SignalHitV",
+        "moduleName": "AEPSignal",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "SignalHitProcessor",
+        "printedName": "SignalHitProcessor",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "LOG_TAG",
+            "printedName": "LOG_TAG",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9AEPSignal18SignalHitProcessorC7LOG_TAG33_4EED4F5BD96E919CF0344E511BE7285CLLSSvp",
+            "mangledName": "$s9AEPSignal18SignalHitProcessorC7LOG_TAG33_4EED4F5BD96E919CF0344E511BE7285CLLSSvp",
+            "moduleName": "AEPSignal",
+            "isInternal": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage"
+            ],
+            "fixedbinaryorder": 0,
+            "isLet": true,
+            "hasStorage": true
+          },
+          {
+            "kind": "Function",
+            "name": "retryInterval",
+            "printedName": "retryInterval(for:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "DataEntity",
+                "printedName": "AEPServices.DataEntity",
+                "usr": "c:@M@AEPServices@objc(cs)AEPDataEntity"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9AEPSignal18SignalHitProcessorC13retryInterval3forSd11AEPServices10DataEntityC_tF",
+            "mangledName": "$s9AEPSignal18SignalHitProcessorC13retryInterval3forSd11AEPServices10DataEntityC_tF",
+            "moduleName": "AEPSignal",
+            "isOpen": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "processHit",
+            "printedName": "processHit(entity:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "DataEntity",
+                "printedName": "AEPServices.DataEntity",
+                "usr": "c:@M@AEPServices@objc(cs)AEPDataEntity"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Bool) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9AEPSignal18SignalHitProcessorC07processC06entity10completiony11AEPServices10DataEntityC_ySbctF",
+            "mangledName": "$s9AEPSignal18SignalHitProcessorC07processC06entity10completiony11AEPServices10DataEntityC_ySbctF",
+            "moduleName": "AEPSignal",
+            "isOpen": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "SignalHitProcessor",
+                "printedName": "AEPSignal.SignalHitProcessor",
+                "usr": "s:9AEPSignal18SignalHitProcessorC"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:9AEPSignal18SignalHitProcessorCACycfc",
+            "mangledName": "$s9AEPSignal18SignalHitProcessorCACycfc",
+            "moduleName": "AEPSignal",
+            "implicit": true,
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:9AEPSignal18SignalHitProcessorC",
+        "mangledName": "$s9AEPSignal18SignalHitProcessorC",
+        "moduleName": "AEPSignal",
+        "isOpen": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "HitProcessing",
+            "printedName": "HitProcessing",
+            "usr": "s:11AEPServices13HitProcessingP",
+            "mangledName": "$s11AEPServices13HitProcessingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "Event",
+        "printedName": "Event",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "isPostback",
+            "printedName": "isPostback",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7AEPCore5EventC9AEPSignalE10isPostbackSbvp",
+            "mangledName": "$s7AEPCore5EventC9AEPSignalE10isPostbackSbvp",
+            "moduleName": "AEPSignal",
+            "isOpen": true,
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7AEPCore5EventC9AEPSignalE10isPostbackSbvg",
+                "mangledName": "$s7AEPCore5EventC9AEPSignalE10isPostbackSbvg",
+                "moduleName": "AEPSignal",
+                "isOpen": true,
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "isOpenUrl",
+            "printedName": "isOpenUrl",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7AEPCore5EventC9AEPSignalE9isOpenUrlSbvp",
+            "mangledName": "$s7AEPCore5EventC9AEPSignalE9isOpenUrlSbvp",
+            "moduleName": "AEPSignal",
+            "isOpen": true,
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7AEPCore5EventC9AEPSignalE9isOpenUrlSbvg",
+                "mangledName": "$s7AEPCore5EventC9AEPSignalE9isOpenUrlSbvg",
+                "moduleName": "AEPSignal",
+                "isOpen": true,
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "isCollectPii",
+            "printedName": "isCollectPii",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7AEPCore5EventC9AEPSignalE12isCollectPiiSbvp",
+            "mangledName": "$s7AEPCore5EventC9AEPSignalE12isCollectPiiSbvp",
+            "moduleName": "AEPSignal",
+            "isOpen": true,
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7AEPCore5EventC9AEPSignalE12isCollectPiiSbvg",
+                "mangledName": "$s7AEPCore5EventC9AEPSignalE12isCollectPiiSbvg",
+                "moduleName": "AEPSignal",
+                "isOpen": true,
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "contentType",
+            "printedName": "contentType",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7AEPCore5EventC9AEPSignalE11contentTypeSSSgvp",
+            "mangledName": "$s7AEPCore5EventC9AEPSignalE11contentTypeSSSgvp",
+            "moduleName": "AEPSignal",
+            "isOpen": true,
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7AEPCore5EventC9AEPSignalE11contentTypeSSSgvg",
+                "mangledName": "$s7AEPCore5EventC9AEPSignalE11contentTypeSSSgvg",
+                "moduleName": "AEPSignal",
+                "isOpen": true,
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "templateUrl",
+            "printedName": "templateUrl",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7AEPCore5EventC9AEPSignalE11templateUrlSSSgvp",
+            "mangledName": "$s7AEPCore5EventC9AEPSignalE11templateUrlSSSgvp",
+            "moduleName": "AEPSignal",
+            "isOpen": true,
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7AEPCore5EventC9AEPSignalE11templateUrlSSSgvg",
+                "mangledName": "$s7AEPCore5EventC9AEPSignalE11templateUrlSSSgvg",
+                "moduleName": "AEPSignal",
+                "isOpen": true,
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "templateBody",
+            "printedName": "templateBody",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7AEPCore5EventC9AEPSignalE12templateBodySSSgvp",
+            "mangledName": "$s7AEPCore5EventC9AEPSignalE12templateBodySSSgvp",
+            "moduleName": "AEPSignal",
+            "isOpen": true,
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7AEPCore5EventC9AEPSignalE12templateBodySSSgvg",
+                "mangledName": "$s7AEPCore5EventC9AEPSignalE12templateBodySSSgvg",
+                "moduleName": "AEPSignal",
+                "isOpen": true,
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "timeout",
+            "printedName": "timeout",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Double?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7AEPCore5EventC9AEPSignalE7timeoutSdSgvp",
+            "mangledName": "$s7AEPCore5EventC9AEPSignalE7timeoutSdSgvp",
+            "moduleName": "AEPSignal",
+            "isOpen": true,
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Double?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Double",
+                        "printedName": "Swift.Double",
+                        "usr": "s:Sd"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7AEPCore5EventC9AEPSignalE7timeoutSdSgvg",
+                "mangledName": "$s7AEPCore5EventC9AEPSignalE7timeoutSdSgvg",
+                "moduleName": "AEPSignal",
+                "isOpen": true,
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "urlToOpen",
+            "printedName": "urlToOpen",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7AEPCore5EventC9AEPSignalE9urlToOpenSSSgvp",
+            "mangledName": "$s7AEPCore5EventC9AEPSignalE9urlToOpenSSSgvp",
+            "moduleName": "AEPSignal",
+            "isOpen": true,
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7AEPCore5EventC9AEPSignalE9urlToOpenSSSgvg",
+                "mangledName": "$s7AEPCore5EventC9AEPSignalE9urlToOpenSSSgvg",
+                "moduleName": "AEPSignal",
+                "isOpen": true,
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@AEPCore@objc(cs)AEPEvent",
+        "mangledName": "$s7AEPCore5EventC",
+        "moduleName": "AEPCore",
+        "isOpen": true,
+        "objc_name": "AEPEvent",
+        "declAttributes": [
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "isExternal": true,
+        "hasMissingDesignatedInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      }
+    ],
+    "json_format_version": 8
+  }
+}
