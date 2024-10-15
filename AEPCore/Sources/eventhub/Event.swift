@@ -39,6 +39,8 @@ public class Event: NSObject, Codable {
 
     /// unique identifier for the parent of this event. The parent event being the trigger for creating the current event
     @objc public private(set) var parentID: UUID?
+    
+    @objc public private(set) var newMember: UUID?
 
     /// Event description used for logging
     @objc override public var description: String {
