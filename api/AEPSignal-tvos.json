@@ -79,7 +79,6 @@
               "SetterAccess",
               "HasStorage"
             ],
-            "fixedbinaryorder": 0,
             "hasStorage": true,
             "accessors": [
               {
@@ -126,7 +125,6 @@
               "ObjC",
               "HasStorage"
             ],
-            "fixedbinaryorder": 1,
             "isLet": true,
             "hasStorage": true,
             "accessors": [
@@ -179,7 +177,6 @@
               "ObjC",
               "HasStorage"
             ],
-            "fixedbinaryorder": 2,
             "isLet": true,
             "hasStorage": true,
             "accessors": [
@@ -232,7 +229,6 @@
               "ObjC",
               "HasStorage"
             ],
-            "fixedbinaryorder": 3,
             "isLet": true,
             "hasStorage": true,
             "accessors": [
@@ -361,7 +357,6 @@
               "ObjC",
               "HasStorage"
             ],
-            "fixedbinaryorder": 4,
             "isLet": true,
             "hasStorage": true,
             "accessors": [

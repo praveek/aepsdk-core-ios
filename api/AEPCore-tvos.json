@@ -4753,7 +4753,6 @@
           "ObjC"
         ],
         "enumRawTypeName": "Int",
-        "isEnumExhaustive": true,
         "conformances": [
           {
             "kind": "Conformance",
@@ -9693,7 +9692,6 @@
           "ObjC"
         ],
         "enumRawTypeName": "Int",
-        "isEnumExhaustive": true,
         "conformances": [
           {
             "kind": "Conformance",
@@ -10152,9 +10150,6 @@
             "mangledName": "$s7AEPCore8AEPErrorO8rawValueACSgSi_tcfc",
             "moduleName": "AEPCore",
             "implicit": true,
-            "declAttributes": [
-              "Inlinable"
-            ],
             "init_kind": "Designated"
           },
           {
@@ -10233,9 +10228,6 @@
                 "mangledName": "$s7AEPCore8AEPErrorO8rawValueSivg",
                 "moduleName": "AEPCore",
                 "implicit": true,
-                "declAttributes": [
-                  "Inlinable"
-                ],
                 "accessorKind": "get"
               }
             ]
@@ -10249,7 +10241,6 @@
           "ObjC"
         ],
         "enumRawTypeName": "Int",
-        "isEnumExhaustive": true,
         "conformances": [
           {
             "kind": "Conformance",
@@ -10357,7 +10348,6 @@
               "ObjC",
               "HasStorage"
             ],
-            "fixedbinaryorder": 0,
             "isLet": true,
             "hasStorage": true,
             "accessors": [
@@ -10409,7 +10399,6 @@
               "SetterAccess",
               "HasStorage"
             ],
-            "fixedbinaryorder": 1,
             "hasStorage": true,
             "accessors": [
               {
@@ -10458,7 +10447,6 @@
               "ObjC",
               "HasStorage"
             ],
-            "fixedbinaryorder": 2,
             "isLet": true,
             "hasStorage": true,
             "accessors": [
@@ -10508,7 +10496,6 @@
               "ObjC",
               "HasStorage"
             ],
-            "fixedbinaryorder": 3,
             "isLet": true,
             "hasStorage": true,
             "accessors": [
@@ -10581,7 +10568,6 @@
               "SetterAccess",
               "HasStorage"
             ],
-            "fixedbinaryorder": 4,
             "hasStorage": true,
             "accessors": [
               {
@@ -10653,7 +10639,6 @@
               "SetterAccess",
               "HasStorage"
             ],
-            "fixedbinaryorder": 5,
             "hasStorage": true,
             "accessors": [
               {
@@ -10712,7 +10697,6 @@
               "SetterAccess",
               "HasStorage"
             ],
-            "fixedbinaryorder": 6,
             "hasStorage": true,
             "accessors": [
               {
@@ -10779,7 +10763,6 @@
               "SetterAccess",
               "HasStorage"
             ],
-            "fixedbinaryorder": 7,
             "hasStorage": true,
             "accessors": [
               {
@@ -10907,7 +10890,6 @@
               "SetterAccess",
               "HasStorage"
             ],
-            "fixedbinaryorder": 8,
             "hasStorage": true,
             "accessors": [
               {
@@ -11044,40 +11026,6 @@
                 "accessorKind": "_modify"
               }
             ]
-          },
-          {
-            "kind": "Var",
-            "name": "$__lazy_storage_$_eventHash",
-            "printedName": "$__lazy_storage_$_eventHash",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.UInt32?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "UInt32",
-                    "printedName": "Swift.UInt32",
-                    "usr": "s:s6UInt32V"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:7AEPCore5EventC27$__lazy_storage_$_eventHash33_D83AE9DBBD807CF8D113B0E00944C0CCLLs6UInt32VSgvp",
-            "mangledName": "$s7AEPCore5EventC27$__lazy_storage_$_eventHash33_D83AE9DBBD807CF8D113B0E00944C0CCLLs6UInt32VSgvp",
-            "moduleName": "AEPCore",
-            "implicit": true,
-            "isInternal": true,
-            "declAttributes": [
-              "HasInitialValue",
-              "Final",
-              "HasStorage"
-            ],
-            "fixedbinaryorder": 9,
-            "hasStorage": true
           },
           {
             "kind": "Constructor",
@@ -14787,8 +14735,7 @@
             "declKind": "EnumElement",
             "usr": "s:7AEPCore13EventHubErrorO20invalidExtensionNameyA2CmF",
             "mangledName": "$s7AEPCore13EventHubErrorO20invalidExtensionNameyA2CmF",
-            "moduleName": "AEPCore",
-            "fixedbinaryorder": 0
+            "moduleName": "AEPCore"
           },
           {
             "kind": "Var",
@@ -14825,8 +14772,7 @@
             "declKind": "EnumElement",
             "usr": "s:7AEPCore13EventHubErrorO22duplicateExtensionNameyA2CmF",
             "mangledName": "$s7AEPCore13EventHubErrorO22duplicateExtensionNameyA2CmF",
-            "moduleName": "AEPCore",
-            "fixedbinaryorder": 1
+            "moduleName": "AEPCore"
           },
           {
             "kind": "Var",
@@ -14863,8 +14809,7 @@
             "declKind": "EnumElement",
             "usr": "s:7AEPCore13EventHubErrorO30extensionInitializationFailureyA2CmF",
             "mangledName": "$s7AEPCore13EventHubErrorO30extensionInitializationFailureyA2CmF",
-            "moduleName": "AEPCore",
-            "fixedbinaryorder": 2
+            "moduleName": "AEPCore"
           },
           {
             "kind": "Var",
@@ -14901,8 +14846,7 @@
             "declKind": "EnumElement",
             "usr": "s:7AEPCore13EventHubErrorO22extensionNotRegisteredyA2CmF",
             "mangledName": "$s7AEPCore13EventHubErrorO22extensionNotRegisteredyA2CmF",
-            "moduleName": "AEPCore",
-            "fixedbinaryorder": 3
+            "moduleName": "AEPCore"
           },
           {
             "kind": "Var",
@@ -14939,13 +14883,12 @@
             "declKind": "EnumElement",
             "usr": "s:7AEPCore13EventHubErrorO7unknownyA2CmF",
             "mangledName": "$s7AEPCore13EventHubErrorO7unknownyA2CmF",
-            "moduleName": "AEPCore",
-            "fixedbinaryorder": 4
+            "moduleName": "AEPCore"
           },
           {
             "kind": "Function",
-            "name": "__derived_enum_equals",
-            "printedName": "__derived_enum_equals(_:_:)",
+            "name": "==",
+            "printedName": "==(_:_:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -14967,14 +14910,11 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:7AEPCore13EventHubErrorO21__derived_enum_equalsySbAC_ACtFZ",
-            "mangledName": "$s7AEPCore13EventHubErrorO21__derived_enum_equalsySbAC_ACtFZ",
+            "usr": "s:7AEPCore13EventHubErrorO2eeoiySbAC_ACtFZ",
+            "mangledName": "$s7AEPCore13EventHubErrorO2eeoiySbAC_ACtFZ",
             "moduleName": "AEPCore",
             "static": true,
             "implicit": true,
-            "declAttributes": [
-              "Implements"
-            ],
             "funcSelfKind": "NonMutating"
           },
           {
@@ -15101,7 +15041,6 @@
         "usr": "s:7AEPCore13EventHubErrorO",
         "mangledName": "$s7AEPCore13EventHubErrorO",
         "moduleName": "AEPCore",
-        "isEnumExhaustive": true,
         "conformances": [
           {
             "kind": "Conformance",
@@ -23055,9 +22994,6 @@
             "mangledName": "$s7AEPCore21SharedStateResolutionO8rawValueACSgSi_tcfc",
             "moduleName": "AEPCore",
             "implicit": true,
-            "declAttributes": [
-              "Inlinable"
-            ],
             "init_kind": "Designated"
           },
           {
@@ -23095,9 +23031,6 @@
                 "mangledName": "$s7AEPCore21SharedStateResolutionO8rawValueSivg",
                 "moduleName": "AEPCore",
                 "implicit": true,
-                "declAttributes": [
-                  "Inlinable"
-                ],
                 "accessorKind": "get"
               }
             ]
@@ -23112,7 +23045,6 @@
           "ObjC"
         ],
         "enumRawTypeName": "Int",
-        "isEnumExhaustive": true,
         "conformances": [
           {
             "kind": "Conformance",
@@ -23325,9 +23257,6 @@
             "mangledName": "$s7AEPCore17SharedStateStatusO8rawValueACSgSi_tcfc",
             "moduleName": "AEPCore",
             "implicit": true,
-            "declAttributes": [
-              "Inlinable"
-            ],
             "init_kind": "Designated"
           },
           {
@@ -23365,9 +23294,6 @@
                 "mangledName": "$s7AEPCore17SharedStateStatusO8rawValueSivg",
                 "moduleName": "AEPCore",
                 "implicit": true,
-                "declAttributes": [
-                  "Inlinable"
-                ],
                 "accessorKind": "get"
               }
             ]
@@ -23382,7 +23308,6 @@
           "ObjC"
         ],
         "enumRawTypeName": "Int",
-        "isEnumExhaustive": true,
         "conformances": [
           {
             "kind": "Conformance",
@@ -23880,7 +23805,6 @@
               "ObjC",
               "HasStorage"
             ],
-            "fixedbinaryorder": 0,
             "isLet": true,
             "hasStorage": true,
             "accessors": [
@@ -23951,7 +23875,6 @@
               "ObjC",
               "HasStorage"
             ],
-            "fixedbinaryorder": 1,
             "isLet": true,
             "hasStorage": true,
             "accessors": [
@@ -25486,7 +25409,6 @@
               "ObjC",
               "HasStorage"
             ],
-            "fixedbinaryorder": 0,
             "isLet": true,
             "hasStorage": true,
             "accessors": [
@@ -25557,7 +25479,6 @@
               "ObjC",
               "HasStorage"
             ],
-            "fixedbinaryorder": 1,
             "isLet": true,
             "hasStorage": true,
             "accessors": [
@@ -25623,7 +25544,6 @@
               "ObjC",
               "HasStorage"
             ],
-            "fixedbinaryorder": 2,
             "isLet": true,
             "hasStorage": true,
             "accessors": [
@@ -25863,7 +25783,6 @@
               "ObjC",
               "HasStorage"
             ],
-            "fixedbinaryorder": 0,
             "isLet": true,
             "hasStorage": true,
             "accessors": [
@@ -25921,7 +25840,6 @@
               "ObjC",
               "HasStorage"
             ],
-            "fixedbinaryorder": 1,
             "isLet": true,
             "hasStorage": true,
             "accessors": [
@@ -25987,7 +25905,6 @@
               "ObjC",
               "HasStorage"
             ],
-            "fixedbinaryorder": 2,
             "isLet": true,
             "hasStorage": true,
             "accessors": [
@@ -42343,8 +42260,8 @@
               },
               {
                 "kind": "Function",
-                "name": "__derived_enum_equals",
-                "printedName": "__derived_enum_equals(_:_:)",
+                "name": "==",
+                "printedName": "==(_:_:)",
                 "children": [
                   {
                     "kind": "TypeNominal",
@@ -42366,14 +42283,11 @@
                   }
                 ],
                 "declKind": "Func",
-                "usr": "s:7AEPCore15JSONConsequenceV10CodingKeysO21__derived_enum_equalsySbAE_AEtFZ",
-                "mangledName": "$s7AEPCore15JSONConsequenceV10CodingKeysO21__derived_enum_equalsySbAE_AEtFZ",
+                "usr": "s:7AEPCore15JSONConsequenceV10CodingKeysO2eeoiySbAE_AEtFZ",
+                "mangledName": "$s7AEPCore15JSONConsequenceV10CodingKeysO2eeoiySbAE_AEtFZ",
                 "moduleName": "AEPCore",
                 "static": true,
                 "implicit": true,
-                "declAttributes": [
-                  "Implements"
-                ],
                 "funcSelfKind": "NonMutating"
               },
               {
@@ -42789,7 +42703,6 @@
             "declAttributes": [
               "HasStorage"
             ],
-            "fixedbinaryorder": 0,
             "isLet": true,
             "hasStorage": true,
             "accessors": [
@@ -42810,9 +42723,6 @@
                 "mangledName": "$s7AEPCore10LaunchRuleV9condition14AEPRulesEngine9Evaluable_pvg",
                 "moduleName": "AEPCore",
                 "implicit": true,
-                "declAttributes": [
-                  "Transparent"
-                ],
                 "accessorKind": "get"
               }
             ]
@@ -42844,7 +42754,6 @@
             "declAttributes": [
               "HasStorage"
             ],
-            "fixedbinaryorder": 1,
             "isLet": true,
             "hasStorage": true,
             "accessors": [
@@ -42873,9 +42782,6 @@
                 "mangledName": "$s7AEPCore10LaunchRuleV12consequencesSayAA0C11ConsequenceVGvg",
                 "moduleName": "AEPCore",
                 "implicit": true,
-                "declAttributes": [
-                  "Transparent"
-                ],
                 "accessorKind": "get"
               }
             ]
@@ -43102,185 +43008,6 @@
         "children": [
           {
             "kind": "Var",
-            "name": "LOG_TAG",
-            "printedName": "LOG_TAG",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:7AEPCore17LaunchRulesEngineC7LOG_TAG33_3C10603058FA57F04A5F6B0D3524AC37LLSSvp",
-            "mangledName": "$s7AEPCore17LaunchRulesEngineC7LOG_TAG33_3C10603058FA57F04A5F6B0D3524AC37LLSSvp",
-            "moduleName": "AEPCore",
-            "isInternal": true,
-            "declAttributes": [
-              "HasInitialValue",
-              "Final",
-              "HasStorage"
-            ],
-            "fixedbinaryorder": 0,
-            "isLet": true,
-            "hasStorage": true
-          },
-          {
-            "kind": "Var",
-            "name": "transformer",
-            "printedName": "transformer",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Transforming",
-                "printedName": "any AEPRulesEngine.Transforming",
-                "usr": "s:14AEPRulesEngine12TransformingP"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:7AEPCore17LaunchRulesEngineC11transformer33_3C10603058FA57F04A5F6B0D3524AC37LL08AEPRulesD012Transforming_pvp",
-            "mangledName": "$s7AEPCore17LaunchRulesEngineC11transformer33_3C10603058FA57F04A5F6B0D3524AC37LL08AEPRulesD012Transforming_pvp",
-            "moduleName": "AEPCore",
-            "isInternal": true,
-            "declAttributes": [
-              "Final",
-              "HasStorage"
-            ],
-            "fixedbinaryorder": 1,
-            "isLet": true,
-            "hasStorage": true
-          },
-          {
-            "kind": "Var",
-            "name": "name",
-            "printedName": "name",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:7AEPCore17LaunchRulesEngineC4name33_3C10603058FA57F04A5F6B0D3524AC37LLSSvp",
-            "mangledName": "$s7AEPCore17LaunchRulesEngineC4name33_3C10603058FA57F04A5F6B0D3524AC37LLSSvp",
-            "moduleName": "AEPCore",
-            "isInternal": true,
-            "declAttributes": [
-              "Final",
-              "HasStorage"
-            ],
-            "fixedbinaryorder": 2,
-            "isLet": true,
-            "hasStorage": true
-          },
-          {
-            "kind": "Var",
-            "name": "rulesQueue",
-            "printedName": "rulesQueue",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "DispatchQueue",
-                "printedName": "Dispatch.DispatchQueue",
-                "usr": "c:objc(cs)OS_dispatch_queue"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:7AEPCore17LaunchRulesEngineC10rulesQueue33_3C10603058FA57F04A5F6B0D3524AC37LLSo17OS_dispatch_queueCvp",
-            "mangledName": "$s7AEPCore17LaunchRulesEngineC10rulesQueue33_3C10603058FA57F04A5F6B0D3524AC37LLSo17OS_dispatch_queueCvp",
-            "moduleName": "AEPCore",
-            "isInternal": true,
-            "declAttributes": [
-              "Final",
-              "HasStorage"
-            ],
-            "fixedbinaryorder": 3,
-            "isLet": true,
-            "hasStorage": true
-          },
-          {
-            "kind": "Var",
-            "name": "waitingEvents",
-            "printedName": "waitingEvents",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "[AEPCore.Event]?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Array",
-                    "printedName": "[AEPCore.Event]",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Event",
-                        "printedName": "AEPCore.Event",
-                        "usr": "c:@M@AEPCore@objc(cs)AEPEvent"
-                      }
-                    ],
-                    "usr": "s:Sa"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:7AEPCore17LaunchRulesEngineC13waitingEvents33_3C10603058FA57F04A5F6B0D3524AC37LLSayAA5EventCGSgvp",
-            "mangledName": "$s7AEPCore17LaunchRulesEngineC13waitingEvents33_3C10603058FA57F04A5F6B0D3524AC37LLSayAA5EventCGSgvp",
-            "moduleName": "AEPCore",
-            "isInternal": true,
-            "declAttributes": [
-              "HasInitialValue",
-              "HasStorage"
-            ],
-            "fixedbinaryorder": 4,
-            "hasStorage": true
-          },
-          {
-            "kind": "Var",
-            "name": "dispatchChainedEventsCount",
-            "printedName": "dispatchChainedEventsCount",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Dictionary",
-                "printedName": "[Foundation.UUID : Swift.Int]",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "UUID",
-                    "printedName": "Foundation.UUID",
-                    "usr": "s:10Foundation4UUIDV"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Int",
-                    "printedName": "Swift.Int",
-                    "usr": "s:Si"
-                  }
-                ],
-                "usr": "s:SD"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:7AEPCore17LaunchRulesEngineC26dispatchChainedEventsCount33_3C10603058FA57F04A5F6B0D3524AC37LLSDy10Foundation4UUIDVSiGvp",
-            "mangledName": "$s7AEPCore17LaunchRulesEngineC26dispatchChainedEventsCount33_3C10603058FA57F04A5F6B0D3524AC37LLSDy10Foundation4UUIDVSiGvp",
-            "moduleName": "AEPCore",
-            "isInternal": true,
-            "declAttributes": [
-              "HasInitialValue",
-              "HasStorage"
-            ],
-            "fixedbinaryorder": 5,
-            "hasStorage": true
-          },
-          {
-            "kind": "Var",
             "name": "extensionRuntime",
             "printedName": "extensionRuntime",
             "children": [
@@ -43299,7 +43026,6 @@
               "Final",
               "HasStorage"
             ],
-            "fixedbinaryorder": 6,
             "isLet": true,
             "hasStorage": true,
             "accessors": [
@@ -43347,7 +43073,6 @@
               "Final",
               "HasStorage"
             ],
-            "fixedbinaryorder": 7,
             "isLet": true,
             "hasStorage": true,
             "accessors": [
@@ -43403,7 +43128,6 @@
               "Final",
               "HasStorage"
             ],
-            "fixedbinaryorder": 8,
             "isLet": true,
             "hasStorage": true,
             "accessors": [
@@ -43825,7 +43549,6 @@
             "declAttributes": [
               "HasStorage"
             ],
-            "fixedbinaryorder": 0,
             "isLet": true,
             "hasStorage": true,
             "accessors": [
@@ -43846,9 +43569,6 @@
                 "mangledName": "$s7AEPCore15RuleConsequenceV2idSSvg",
                 "moduleName": "AEPCore",
                 "implicit": true,
-                "declAttributes": [
-                  "Transparent"
-                ],
                 "accessorKind": "get"
               }
             ]
@@ -43872,7 +43592,6 @@
             "declAttributes": [
               "HasStorage"
             ],
-            "fixedbinaryorder": 1,
             "isLet": true,
             "hasStorage": true,
             "accessors": [
@@ -43893,9 +43612,6 @@
                 "mangledName": "$s7AEPCore15RuleConsequenceV4typeSSvg",
                 "moduleName": "AEPCore",
                 "implicit": true,
-                "declAttributes": [
-                  "Transparent"
-                ],
                 "accessorKind": "get"
               }
             ]
@@ -43940,7 +43656,6 @@
             "declAttributes": [
               "HasStorage"
             ],
-            "fixedbinaryorder": 2,
             "hasStorage": true,
             "accessors": [
               {
@@ -43981,9 +43696,6 @@
                 "mangledName": "$s7AEPCore15RuleConsequenceV7detailsSDySSypSgGvg",
                 "moduleName": "AEPCore",
                 "implicit": true,
-                "declAttributes": [
-                  "Transparent"
-                ],
                 "accessorKind": "get"
               },
               {
@@ -44029,9 +43741,6 @@
                 "mangledName": "$s7AEPCore15RuleConsequenceV7detailsSDySSypSgGvs",
                 "moduleName": "AEPCore",
                 "implicit": true,
-                "declAttributes": [
-                  "Transparent"
-                ],
                 "accessorKind": "set"
               },
               {
@@ -44050,9 +43759,6 @@
                 "mangledName": "$s7AEPCore15RuleConsequenceV7detailsSDySSypSgGvM",
                 "moduleName": "AEPCore",
                 "implicit": true,
-                "declAttributes": [
-                  "Transparent"
-                ],
                 "accessorKind": "_modify"
               }
             ]
@@ -45388,8 +45094,8 @@
           },
           {
             "kind": "Function",
-            "name": "__derived_enum_equals",
-            "printedName": "__derived_enum_equals(_:_:)",
+            "name": "==",
+            "printedName": "==(_:_:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -45411,14 +45117,11 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:7AEPCore20RulesDownloaderErrorO21__derived_enum_equalsySbAC_ACtFZ",
-            "mangledName": "$s7AEPCore20RulesDownloaderErrorO21__derived_enum_equalsySbAC_ACtFZ",
+            "usr": "s:7AEPCore20RulesDownloaderErrorO2eeoiySbAC_ACtFZ",
+            "mangledName": "$s7AEPCore20RulesDownloaderErrorO2eeoiySbAC_ACtFZ",
             "moduleName": "AEPCore",
             "static": true,
             "implicit": true,
-            "declAttributes": [
-              "Implements"
-            ],
             "funcSelfKind": "NonMutating"
           },
           {

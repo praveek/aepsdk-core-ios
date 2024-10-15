@@ -1379,8 +1379,8 @@
           },
           {
             "kind": "Function",
-            "name": "__derived_struct_equals",
-            "printedName": "__derived_struct_equals(_:_:)",
+            "name": "==",
+            "printedName": "==(_:_:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -1402,14 +1402,11 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:11AEPIdentity4ECIDV23__derived_struct_equalsySbAC_ACtFZ",
-            "mangledName": "$s11AEPIdentity4ECIDV23__derived_struct_equalsySbAC_ACtFZ",
+            "usr": "s:11AEPIdentity4ECIDV2eeoiySbAC_ACtFZ",
+            "mangledName": "$s11AEPIdentity4ECIDV2eeoiySbAC_ACtFZ",
             "moduleName": "AEPIdentity",
             "static": true,
             "implicit": true,
-            "declAttributes": [
-              "Implements"
-            ],
             "funcSelfKind": "NonMutating"
           },
           {
@@ -1891,7 +1888,6 @@
               "ObjC",
               "HasStorage"
             ],
-            "fixedbinaryorder": 0,
             "isLet": true,
             "hasStorage": true,
             "accessors": [
@@ -1944,7 +1940,6 @@
               "ObjC",
               "HasStorage"
             ],
-            "fixedbinaryorder": 1,
             "isLet": true,
             "hasStorage": true,
             "accessors": [
@@ -1997,7 +1992,6 @@
               "ObjC",
               "HasStorage"
             ],
-            "fixedbinaryorder": 2,
             "isLet": true,
             "hasStorage": true,
             "accessors": [
@@ -2126,7 +2120,6 @@
               "ObjC",
               "HasStorage"
             ],
-            "fixedbinaryorder": 3,
             "isLet": true,
             "hasStorage": true,
             "accessors": [
@@ -2208,7 +2201,6 @@
               "SetterAccess",
               "HasStorage"
             ],
-            "fixedbinaryorder": 4,
             "hasStorage": true,
             "accessors": [
               {
@@ -12416,9 +12408,6 @@
             "mangledName": "$s11AEPIdentity32MobileVisitorAuthenticationStateO8rawValueACSgSi_tcfc",
             "moduleName": "AEPIdentity",
             "implicit": true,
-            "declAttributes": [
-              "Inlinable"
-            ],
             "init_kind": "Designated"
           },
           {
@@ -12456,9 +12445,6 @@
                 "mangledName": "$s11AEPIdentity32MobileVisitorAuthenticationStateO8rawValueSivg",
                 "moduleName": "AEPIdentity",
                 "implicit": true,
-                "declAttributes": [
-                  "Inlinable"
-                ],
                 "accessorKind": "get"
               }
             ]
@@ -12473,7 +12459,6 @@
           "ObjC"
         ],
         "enumRawTypeName": "Int",
-        "isEnumExhaustive": true,
         "conformances": [
           {
             "kind": "Conformance",

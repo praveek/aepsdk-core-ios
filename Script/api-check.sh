@@ -29,21 +29,21 @@ build_and_dump() {
 
     SDK_PATH=$(xcrun --sdk $SDK --show-sdk-path)
     
-    if ! swift build --sdk "$SDK_PATH" --triple "$TRIPLE" > /dev/null 2>&1; then
+    if ! swift build --sdk "$SDK_PATH" --triple "$TRIPLE" -Xswiftc -enable-library-evolution > /dev/null 2>&1; then
         echo "Build failed."
         exit 1
     fi
         
-    swift api-digester -sdk "$SDK_PATH" -dump-sdk -abi -module "$module" \
-        -target "$TRIPLE" -swift-version 5 -o "$output_file" -I .build/debug/Modules \
-        -avoid-location -avoid-tool-args  -abort-on-module-fail
+    swift api-digester -sdk "$SDK_PATH" -dump-sdk -module "$module" \
+        -target "$TRIPLE" -avoid-location -avoid-tool-args  -abort-on-module-fail -swift-version 5 -I .build/debug/Modules \
+         -abi  -o "$output_file"
 }
 
 run_api_digester() {
     local mode="$1"
     local flag
     if [[ "$mode" == "abi" ]]; then
-        flag="--$1"
+        flag="-abi"
     else
         flag=""
     fi
@@ -51,7 +51,7 @@ run_api_digester() {
     local output_file=$(mktemp)
 
     swift api-digester -sdk "$SDK_PATH" -target "$TRIPLE" -swift-version 5 -diagnose-sdk -print-module \
-        $flag --input-paths "$api_file" --input-paths "$sdk_file" -o "$output_file"
+         --input-paths "$api_file" --input-paths "$sdk_file" $flag -o "$output_file"
     
     local output=$(sed '/^\s*$/d; /^\/\*/d' "$output_file")
     if [[ -n "$output" ]]; then
@@ -75,12 +75,12 @@ check_api_diff() {
     esac
 
     SDK_PATH=$(xcrun --sdk "$SDK" --show-sdk-path)
-    # Check for ABI differences
-    run_api_digester "abi"
 
     # Check for API differences
     run_api_digester "api"
 
+    # Check for ABI differences
+    run_api_digester "abi"
 
     # Check for file content differences
     if ! diff_output=$(diff "$api_file" "$sdk_file" 2>&1); then
@@ -163,4 +163,3 @@ if [ -n "$MODULE" ]; then
 else
     run_for_all_modules
 fi
-

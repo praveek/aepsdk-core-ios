@@ -957,342 +957,11 @@
                 "static": true,
                 "implicit": true,
                 "declAttributes": [
-                  "Final",
-                  "Transparent"
+                  "Final"
                 ],
                 "accessorKind": "get"
               }
             ]
-          },
-          {
-            "kind": "Var",
-            "name": "queue",
-            "printedName": "queue",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "DispatchQueue",
-                "printedName": "Dispatch.DispatchQueue",
-                "usr": "c:objc(cs)OS_dispatch_queue"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:11AEPServices15ServiceProviderC5queue33_C1436E9173A676408550A7049CEF4764LLSo012OS_dispatch_D0Cvp",
-            "mangledName": "$s11AEPServices15ServiceProviderC5queue33_C1436E9173A676408550A7049CEF4764LLSo012OS_dispatch_D0Cvp",
-            "moduleName": "AEPServices",
-            "isInternal": true,
-            "declAttributes": [
-              "HasInitialValue",
-              "Final",
-              "HasStorage"
-            ],
-            "fixedbinaryorder": 0,
-            "isLet": true,
-            "hasStorage": true
-          },
-          {
-            "kind": "Var",
-            "name": "overrideSystemInfoService",
-            "printedName": "overrideSystemInfoService",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "(any AEPServices.SystemInfoService)?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "SystemInfoService",
-                    "printedName": "any AEPServices.SystemInfoService",
-                    "usr": "s:11AEPServices17SystemInfoServiceP"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:11AEPServices15ServiceProviderC018overrideSystemInfoB033_C1436E9173A676408550A7049CEF4764LLAA0efB0_pSgvp",
-            "mangledName": "$s11AEPServices15ServiceProviderC018overrideSystemInfoB033_C1436E9173A676408550A7049CEF4764LLAA0efB0_pSgvp",
-            "moduleName": "AEPServices",
-            "isInternal": true,
-            "declAttributes": [
-              "HasInitialValue",
-              "HasStorage"
-            ],
-            "fixedbinaryorder": 1,
-            "hasStorage": true
-          },
-          {
-            "kind": "Var",
-            "name": "defaultSystemInfoService",
-            "printedName": "defaultSystemInfoService",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "ApplicationSystemInfoService",
-                "printedName": "AEPServices.ApplicationSystemInfoService",
-                "usr": "s:11AEPServices28ApplicationSystemInfoServiceC"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:11AEPServices15ServiceProviderC017defaultSystemInfoB033_C1436E9173A676408550A7049CEF4764LLAA011ApplicationefB0Cvp",
-            "mangledName": "$s11AEPServices15ServiceProviderC017defaultSystemInfoB033_C1436E9173A676408550A7049CEF4764LLAA011ApplicationefB0Cvp",
-            "moduleName": "AEPServices",
-            "isInternal": true,
-            "declAttributes": [
-              "HasInitialValue",
-              "HasStorage"
-            ],
-            "fixedbinaryorder": 2,
-            "hasStorage": true
-          },
-          {
-            "kind": "Var",
-            "name": "overrideKeyValueService",
-            "printedName": "overrideKeyValueService",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "(any AEPServices.NamedCollectionProcessing)?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "NamedCollectionProcessing",
-                    "printedName": "any AEPServices.NamedCollectionProcessing",
-                    "usr": "s:11AEPServices25NamedCollectionProcessingP"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:11AEPServices15ServiceProviderC016overrideKeyValueB033_C1436E9173A676408550A7049CEF4764LLAA25NamedCollectionProcessing_pSgvp",
-            "mangledName": "$s11AEPServices15ServiceProviderC016overrideKeyValueB033_C1436E9173A676408550A7049CEF4764LLAA25NamedCollectionProcessing_pSgvp",
-            "moduleName": "AEPServices",
-            "isInternal": true,
-            "declAttributes": [
-              "HasInitialValue",
-              "HasStorage"
-            ],
-            "fixedbinaryorder": 3,
-            "hasStorage": true
-          },
-          {
-            "kind": "Var",
-            "name": "defaultKeyValueService",
-            "printedName": "defaultKeyValueService",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "UserDefaultsNamedCollection",
-                "printedName": "AEPServices.UserDefaultsNamedCollection",
-                "usr": "s:11AEPServices27UserDefaultsNamedCollectionC"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:11AEPServices15ServiceProviderC015defaultKeyValueB033_C1436E9173A676408550A7049CEF4764LLAA27UserDefaultsNamedCollectionCvp",
-            "mangledName": "$s11AEPServices15ServiceProviderC015defaultKeyValueB033_C1436E9173A676408550A7049CEF4764LLAA27UserDefaultsNamedCollectionCvp",
-            "moduleName": "AEPServices",
-            "isInternal": true,
-            "declAttributes": [
-              "HasInitialValue",
-              "HasStorage"
-            ],
-            "fixedbinaryorder": 4,
-            "hasStorage": true
-          },
-          {
-            "kind": "Var",
-            "name": "overrideNetworkService",
-            "printedName": "overrideNetworkService",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "(any AEPServices.Networking)?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Networking",
-                    "printedName": "any AEPServices.Networking",
-                    "usr": "s:11AEPServices10NetworkingP"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:11AEPServices15ServiceProviderC015overrideNetworkB033_C1436E9173A676408550A7049CEF4764LLAA10Networking_pSgvp",
-            "mangledName": "$s11AEPServices15ServiceProviderC015overrideNetworkB033_C1436E9173A676408550A7049CEF4764LLAA10Networking_pSgvp",
-            "moduleName": "AEPServices",
-            "isInternal": true,
-            "declAttributes": [
-              "HasInitialValue",
-              "HasStorage"
-            ],
-            "fixedbinaryorder": 5,
-            "hasStorage": true
-          },
-          {
-            "kind": "Var",
-            "name": "defaultNetworkService",
-            "printedName": "defaultNetworkService",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "NetworkService",
-                "printedName": "AEPServices.NetworkService",
-                "usr": "s:11AEPServices14NetworkServiceC"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:11AEPServices15ServiceProviderC014defaultNetworkB033_C1436E9173A676408550A7049CEF4764LLAA0eB0Cvp",
-            "mangledName": "$s11AEPServices15ServiceProviderC014defaultNetworkB033_C1436E9173A676408550A7049CEF4764LLAA0eB0Cvp",
-            "moduleName": "AEPServices",
-            "isInternal": true,
-            "declAttributes": [
-              "HasInitialValue",
-              "HasStorage"
-            ],
-            "fixedbinaryorder": 6,
-            "hasStorage": true
-          },
-          {
-            "kind": "Var",
-            "name": "defaultDataQueueService",
-            "printedName": "defaultDataQueueService",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "DataQueueService",
-                "printedName": "AEPServices.DataQueueService",
-                "usr": "s:11AEPServices16DataQueueServiceC"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:11AEPServices15ServiceProviderC016defaultDataQueueB033_C1436E9173A676408550A7049CEF4764LLAA0efB0Cvp",
-            "mangledName": "$s11AEPServices15ServiceProviderC016defaultDataQueueB033_C1436E9173A676408550A7049CEF4764LLAA0efB0Cvp",
-            "moduleName": "AEPServices",
-            "isInternal": true,
-            "declAttributes": [
-              "HasInitialValue",
-              "HasStorage"
-            ],
-            "fixedbinaryorder": 7,
-            "hasStorage": true
-          },
-          {
-            "kind": "Var",
-            "name": "overrideCacheService",
-            "printedName": "overrideCacheService",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "(any AEPServices.Caching)?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Caching",
-                    "printedName": "any AEPServices.Caching",
-                    "usr": "s:11AEPServices7CachingP"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:11AEPServices15ServiceProviderC013overrideCacheB033_C1436E9173A676408550A7049CEF4764LLAA7Caching_pSgvp",
-            "mangledName": "$s11AEPServices15ServiceProviderC013overrideCacheB033_C1436E9173A676408550A7049CEF4764LLAA7Caching_pSgvp",
-            "moduleName": "AEPServices",
-            "isInternal": true,
-            "declAttributes": [
-              "HasInitialValue",
-              "HasStorage"
-            ],
-            "fixedbinaryorder": 8,
-            "hasStorage": true
-          },
-          {
-            "kind": "Var",
-            "name": "defaultCacheService",
-            "printedName": "defaultCacheService",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "DiskCacheService",
-                "printedName": "AEPServices.DiskCacheService",
-                "usr": "s:11AEPServices16DiskCacheServiceC"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:11AEPServices15ServiceProviderC012defaultCacheB033_C1436E9173A676408550A7049CEF4764LLAA04DiskeB0Cvp",
-            "mangledName": "$s11AEPServices15ServiceProviderC012defaultCacheB033_C1436E9173A676408550A7049CEF4764LLAA04DiskeB0Cvp",
-            "moduleName": "AEPServices",
-            "isInternal": true,
-            "declAttributes": [
-              "HasInitialValue",
-              "HasStorage"
-            ],
-            "fixedbinaryorder": 9,
-            "hasStorage": true
-          },
-          {
-            "kind": "Var",
-            "name": "overrideLoggingService",
-            "printedName": "overrideLoggingService",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "(any AEPServices.Logging)?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Logging",
-                    "printedName": "any AEPServices.Logging",
-                    "usr": "c:@M@AEPServices@objc(pl)AEPLogging"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:11AEPServices15ServiceProviderC015overrideLoggingB033_C1436E9173A676408550A7049CEF4764LLAA0E0_pSgvp",
-            "mangledName": "$s11AEPServices15ServiceProviderC015overrideLoggingB033_C1436E9173A676408550A7049CEF4764LLAA0E0_pSgvp",
-            "moduleName": "AEPServices",
-            "isInternal": true,
-            "declAttributes": [
-              "HasInitialValue",
-              "HasStorage"
-            ],
-            "fixedbinaryorder": 10,
-            "hasStorage": true
-          },
-          {
-            "kind": "Var",
-            "name": "defaultLoggingService",
-            "printedName": "defaultLoggingService",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "LoggingService",
-                "printedName": "AEPServices.LoggingService",
-                "usr": "s:11AEPServices14LoggingServiceC"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:11AEPServices15ServiceProviderC014defaultLoggingB033_C1436E9173A676408550A7049CEF4764LLAA0eB0Cvp",
-            "mangledName": "$s11AEPServices15ServiceProviderC014defaultLoggingB033_C1436E9173A676408550A7049CEF4764LLAA0eB0Cvp",
-            "moduleName": "AEPServices",
-            "isInternal": true,
-            "declAttributes": [
-              "HasInitialValue",
-              "HasStorage"
-            ],
-            "fixedbinaryorder": 11,
-            "hasStorage": true
           },
           {
             "kind": "Var",
@@ -1372,9 +1041,6 @@
                 "moduleName": "AEPServices",
                 "implicit": true,
                 "isOpen": true,
-                "declAttributes": [
-                  "Transparent"
-                ],
                 "accessorKind": "_modify"
               }
             ]
@@ -1457,9 +1123,6 @@
                 "moduleName": "AEPServices",
                 "implicit": true,
                 "isOpen": true,
-                "declAttributes": [
-                  "Transparent"
-                ],
                 "accessorKind": "_modify"
               }
             ]
@@ -1542,9 +1205,6 @@
                 "moduleName": "AEPServices",
                 "implicit": true,
                 "isOpen": true,
-                "declAttributes": [
-                  "Transparent"
-                ],
                 "accessorKind": "_modify"
               }
             ]
@@ -1666,9 +1326,6 @@
                 "moduleName": "AEPServices",
                 "implicit": true,
                 "isOpen": true,
-                "declAttributes": [
-                  "Transparent"
-                ],
                 "accessorKind": "_modify"
               }
             ]
@@ -1751,9 +1408,6 @@
                 "moduleName": "AEPServices",
                 "implicit": true,
                 "isOpen": true,
-                "declAttributes": [
-                  "Transparent"
-                ],
                 "accessorKind": "_modify"
               }
             ]
@@ -1858,7 +1512,6 @@
                 "implicit": true,
                 "isOpen": true,
                 "declAttributes": [
-                  "Transparent",
                   "Available",
                   "Available"
                 ],
@@ -2566,8 +2219,7 @@
             "declKind": "EnumElement",
             "usr": "s:11AEPServices10DeviceTypeO5PHONEyA2CmF",
             "mangledName": "$s11AEPServices10DeviceTypeO5PHONEyA2CmF",
-            "moduleName": "AEPServices",
-            "fixedbinaryorder": 0
+            "moduleName": "AEPServices"
           },
           {
             "kind": "Var",
@@ -2604,8 +2256,7 @@
             "declKind": "EnumElement",
             "usr": "s:11AEPServices10DeviceTypeO3PADyA2CmF",
             "mangledName": "$s11AEPServices10DeviceTypeO3PADyA2CmF",
-            "moduleName": "AEPServices",
-            "fixedbinaryorder": 1
+            "moduleName": "AEPServices"
           },
           {
             "kind": "Var",
@@ -2642,8 +2293,7 @@
             "declKind": "EnumElement",
             "usr": "s:11AEPServices10DeviceTypeO2TVyA2CmF",
             "mangledName": "$s11AEPServices10DeviceTypeO2TVyA2CmF",
-            "moduleName": "AEPServices",
-            "fixedbinaryorder": 2
+            "moduleName": "AEPServices"
           },
           {
             "kind": "Var",
@@ -2680,8 +2330,7 @@
             "declKind": "EnumElement",
             "usr": "s:11AEPServices10DeviceTypeO7CARPLAYyA2CmF",
             "mangledName": "$s11AEPServices10DeviceTypeO7CARPLAYyA2CmF",
-            "moduleName": "AEPServices",
-            "fixedbinaryorder": 3
+            "moduleName": "AEPServices"
           },
           {
             "kind": "Var",
@@ -2718,13 +2367,12 @@
             "declKind": "EnumElement",
             "usr": "s:11AEPServices10DeviceTypeO7UNKNOWNyA2CmF",
             "mangledName": "$s11AEPServices10DeviceTypeO7UNKNOWNyA2CmF",
-            "moduleName": "AEPServices",
-            "fixedbinaryorder": 4
+            "moduleName": "AEPServices"
           },
           {
             "kind": "Function",
-            "name": "__derived_enum_equals",
-            "printedName": "__derived_enum_equals(_:_:)",
+            "name": "==",
+            "printedName": "==(_:_:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -2746,14 +2394,11 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:11AEPServices10DeviceTypeO21__derived_enum_equalsySbAC_ACtFZ",
-            "mangledName": "$s11AEPServices10DeviceTypeO21__derived_enum_equalsySbAC_ACtFZ",
+            "usr": "s:11AEPServices10DeviceTypeO2eeoiySbAC_ACtFZ",
+            "mangledName": "$s11AEPServices10DeviceTypeO2eeoiySbAC_ACtFZ",
             "moduleName": "AEPServices",
             "static": true,
             "implicit": true,
-            "declAttributes": [
-              "Implements"
-            ],
             "funcSelfKind": "NonMutating"
           },
           {
@@ -2825,7 +2470,6 @@
         "usr": "s:11AEPServices10DeviceTypeO",
         "mangledName": "$s11AEPServices10DeviceTypeO",
         "moduleName": "AEPServices",
-        "isEnumExhaustive": true,
         "conformances": [
           {
             "kind": "Conformance",
@@ -2897,8 +2541,7 @@
             "declKind": "EnumElement",
             "usr": "s:11AEPServices17DeviceOrientationO8PORTRAITyA2CmF",
             "mangledName": "$s11AEPServices17DeviceOrientationO8PORTRAITyA2CmF",
-            "moduleName": "AEPServices",
-            "fixedbinaryorder": 0
+            "moduleName": "AEPServices"
           },
           {
             "kind": "Var",
@@ -2935,8 +2578,7 @@
             "declKind": "EnumElement",
             "usr": "s:11AEPServices17DeviceOrientationO9LANDSCAPEyA2CmF",
             "mangledName": "$s11AEPServices17DeviceOrientationO9LANDSCAPEyA2CmF",
-            "moduleName": "AEPServices",
-            "fixedbinaryorder": 1
+            "moduleName": "AEPServices"
           },
           {
             "kind": "Var",
@@ -2973,13 +2615,12 @@
             "declKind": "EnumElement",
             "usr": "s:11AEPServices17DeviceOrientationO7UNKNOWNyA2CmF",
             "mangledName": "$s11AEPServices17DeviceOrientationO7UNKNOWNyA2CmF",
-            "moduleName": "AEPServices",
-            "fixedbinaryorder": 2
+            "moduleName": "AEPServices"
           },
           {
             "kind": "Function",
-            "name": "__derived_enum_equals",
-            "printedName": "__derived_enum_equals(_:_:)",
+            "name": "==",
+            "printedName": "==(_:_:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -3001,14 +2642,11 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:11AEPServices17DeviceOrientationO21__derived_enum_equalsySbAC_ACtFZ",
-            "mangledName": "$s11AEPServices17DeviceOrientationO21__derived_enum_equalsySbAC_ACtFZ",
+            "usr": "s:11AEPServices17DeviceOrientationO2eeoiySbAC_ACtFZ",
+            "mangledName": "$s11AEPServices17DeviceOrientationO2eeoiySbAC_ACtFZ",
             "moduleName": "AEPServices",
             "static": true,
             "implicit": true,
-            "declAttributes": [
-              "Implements"
-            ],
             "funcSelfKind": "NonMutating"
           },
           {
@@ -3080,7 +2718,6 @@
         "usr": "s:11AEPServices17DeviceOrientationO",
         "mangledName": "$s11AEPServices17DeviceOrientationO",
         "moduleName": "AEPServices",
-        "isEnumExhaustive": true,
         "conformances": [
           {
             "kind": "Conformance",
@@ -3290,29 +2927,6 @@
         "name": "Cache",
         "printedName": "Cache",
         "children": [
-          {
-            "kind": "Var",
-            "name": "name",
-            "printedName": "name",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:11AEPServices5CacheC4name018_AC9145A4CD543E9D7G13A05E1A7223B3CLLSSvp",
-            "mangledName": "$s11AEPServices5CacheC4name018_AC9145A4CD543E9D7G13A05E1A7223B3CLLSSvp",
-            "moduleName": "AEPServices",
-            "isInternal": true,
-            "declAttributes": [
-              "HasStorage"
-            ],
-            "fixedbinaryorder": 0,
-            "hasStorage": true
-          },
           {
             "kind": "Constructor",
             "name": "init",
@@ -3614,7 +3228,6 @@
             "declAttributes": [
               "HasStorage"
             ],
-            "fixedbinaryorder": 0,
             "isLet": true,
             "hasStorage": true,
             "accessors": [
@@ -3635,9 +3248,6 @@
                 "mangledName": "$s11AEPServices10CacheEntryV4data10Foundation4DataVvg",
                 "moduleName": "AEPServices",
                 "implicit": true,
-                "declAttributes": [
-                  "Transparent"
-                ],
                 "accessorKind": "get"
               }
             ]
@@ -3661,7 +3271,6 @@
             "declAttributes": [
               "HasStorage"
             ],
-            "fixedbinaryorder": 1,
             "isLet": true,
             "hasStorage": true,
             "accessors": [
@@ -3682,9 +3291,6 @@
                 "mangledName": "$s11AEPServices10CacheEntryV6expiryAA0B6ExpiryOvg",
                 "moduleName": "AEPServices",
                 "implicit": true,
-                "declAttributes": [
-                  "Transparent"
-                ],
                 "accessorKind": "get"
               }
             ]
@@ -3730,7 +3336,6 @@
             "declAttributes": [
               "HasStorage"
             ],
-            "fixedbinaryorder": 2,
             "isLet": true,
             "hasStorage": true,
             "accessors": [
@@ -3773,17 +3378,14 @@
                 "mangledName": "$s11AEPServices10CacheEntryV8metadataSDyS2SGSgvg",
                 "moduleName": "AEPServices",
                 "implicit": true,
-                "declAttributes": [
-                  "Transparent"
-                ],
                 "accessorKind": "get"
               }
             ]
           },
           {
             "kind": "Function",
-            "name": "__derived_struct_equals",
-            "printedName": "__derived_struct_equals(_:_:)",
+            "name": "==",
+            "printedName": "==(_:_:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -3805,14 +3407,11 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:11AEPServices10CacheEntryV23__derived_struct_equalsySbAC_ACtFZ",
-            "mangledName": "$s11AEPServices10CacheEntryV23__derived_struct_equalsySbAC_ACtFZ",
+            "usr": "s:11AEPServices10CacheEntryV2eeoiySbAC_ACtFZ",
+            "mangledName": "$s11AEPServices10CacheEntryV2eeoiySbAC_ACtFZ",
             "moduleName": "AEPServices",
             "static": true,
             "implicit": true,
-            "declAttributes": [
-              "Implements"
-            ],
             "funcSelfKind": "NonMutating"
           }
         ],
@@ -3884,8 +3483,7 @@
             "declKind": "EnumElement",
             "usr": "s:11AEPServices11CacheExpiryO5neveryA2CmF",
             "mangledName": "$s11AEPServices11CacheExpiryO5neveryA2CmF",
-            "moduleName": "AEPServices",
-            "fixedbinaryorder": 0
+            "moduleName": "AEPServices"
           },
           {
             "kind": "Var",
@@ -3935,8 +3533,7 @@
             "declKind": "EnumElement",
             "usr": "s:11AEPServices11CacheExpiryO7secondsyACSdcACmF",
             "mangledName": "$s11AEPServices11CacheExpiryO7secondsyACSdcACmF",
-            "moduleName": "AEPServices",
-            "fixedbinaryorder": 1
+            "moduleName": "AEPServices"
           },
           {
             "kind": "Var",
@@ -3986,8 +3583,7 @@
             "declKind": "EnumElement",
             "usr": "s:11AEPServices11CacheExpiryO4dateyAC10Foundation4DateVcACmF",
             "mangledName": "$s11AEPServices11CacheExpiryO4dateyAC10Foundation4DateVcACmF",
-            "moduleName": "AEPServices",
-            "fixedbinaryorder": 2
+            "moduleName": "AEPServices"
           },
           {
             "kind": "Var",
@@ -4065,8 +3661,8 @@
           },
           {
             "kind": "Function",
-            "name": "__derived_enum_equals",
-            "printedName": "__derived_enum_equals(_:_:)",
+            "name": "==",
+            "printedName": "==(_:_:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -4088,14 +3684,11 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:11AEPServices11CacheExpiryO21__derived_enum_equalsySbAC_ACtFZ",
-            "mangledName": "$s11AEPServices11CacheExpiryO21__derived_enum_equalsySbAC_ACtFZ",
+            "usr": "s:11AEPServices11CacheExpiryO2eeoiySbAC_ACtFZ",
+            "mangledName": "$s11AEPServices11CacheExpiryO2eeoiySbAC_ACtFZ",
             "moduleName": "AEPServices",
             "static": true,
             "implicit": true,
-            "declAttributes": [
-              "Implements"
-            ],
             "funcSelfKind": "NonMutating"
           }
         ],
@@ -4103,7 +3696,6 @@
         "usr": "s:11AEPServices11CacheExpiryO",
         "mangledName": "$s11AEPServices11CacheExpiryO",
         "moduleName": "AEPServices",
-        "isEnumExhaustive": true,
         "conformances": [
           {
             "kind": "Conformance",
@@ -4695,7 +4287,6 @@
               "Final",
               "HasStorage"
             ],
-            "fixedbinaryorder": 0,
             "isLet": true,
             "hasStorage": true,
             "accessors": [
@@ -4743,7 +4334,6 @@
               "Final",
               "HasStorage"
             ],
-            "fixedbinaryorder": 1,
             "isLet": true,
             "hasStorage": true,
             "accessors": [
@@ -4799,7 +4389,6 @@
               "Final",
               "HasStorage"
             ],
-            "fixedbinaryorder": 2,
             "isLet": true,
             "hasStorage": true,
             "accessors": [
@@ -5302,58 +4891,6 @@
         "children": [
           {
             "kind": "Var",
-            "name": "dbQueue",
-            "printedName": "dbQueue",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "DispatchQueue",
-                "printedName": "Dispatch.DispatchQueue",
-                "usr": "c:objc(cs)OS_dispatch_queue"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:11AEPServices16DataQueueServiceC02dbC033_A21514911F2BA3FDC2AC0E77AB60F191LLSo17OS_dispatch_queueCvp",
-            "mangledName": "$s11AEPServices16DataQueueServiceC02dbC033_A21514911F2BA3FDC2AC0E77AB60F191LLSo17OS_dispatch_queueCvp",
-            "moduleName": "AEPServices",
-            "isInternal": true,
-            "declAttributes": [
-              "HasInitialValue",
-              "Final",
-              "HasStorage"
-            ],
-            "fixedbinaryorder": 0,
-            "isLet": true,
-            "hasStorage": true
-          },
-          {
-            "kind": "Var",
-            "name": "storeQueue",
-            "printedName": "storeQueue",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "DispatchQueue",
-                "printedName": "Dispatch.DispatchQueue",
-                "usr": "c:objc(cs)OS_dispatch_queue"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:11AEPServices16DataQueueServiceC05storeC033_A21514911F2BA3FDC2AC0E77AB60F191LLSo17OS_dispatch_queueCvp",
-            "mangledName": "$s11AEPServices16DataQueueServiceC05storeC033_A21514911F2BA3FDC2AC0E77AB60F191LLSo17OS_dispatch_queueCvp",
-            "moduleName": "AEPServices",
-            "isInternal": true,
-            "declAttributes": [
-              "HasInitialValue",
-              "Final",
-              "HasStorage"
-            ],
-            "fixedbinaryorder": 1,
-            "isLet": true,
-            "hasStorage": true
-          },
-          {
-            "kind": "Var",
             "name": "store",
             "printedName": "store",
             "children": [
@@ -5387,7 +4924,6 @@
               "HasInitialValue",
               "HasStorage"
             ],
-            "fixedbinaryorder": 2,
             "hasStorage": true,
             "accessors": [
               {
@@ -5422,9 +4958,6 @@
                 "moduleName": "AEPServices",
                 "implicit": true,
                 "isOpen": true,
-                "declAttributes": [
-                  "Transparent"
-                ],
                 "accessorKind": "get"
               },
               {
@@ -5464,9 +4997,6 @@
                 "moduleName": "AEPServices",
                 "implicit": true,
                 "isOpen": true,
-                "declAttributes": [
-                  "Transparent"
-                ],
                 "accessorKind": "set"
               },
               {
@@ -5486,9 +5016,6 @@
                 "moduleName": "AEPServices",
                 "implicit": true,
                 "isOpen": true,
-                "declAttributes": [
-                  "Transparent"
-                ],
                 "accessorKind": "_modify"
               }
             ]
@@ -7124,9 +6651,6 @@
             "mangledName": "$s11AEPServices8LogLevelO8rawValueACSgSi_tcfc",
             "moduleName": "AEPServices",
             "implicit": true,
-            "declAttributes": [
-              "Inlinable"
-            ],
             "init_kind": "Designated"
           },
           {
@@ -7164,9 +6688,6 @@
                 "mangledName": "$s11AEPServices8LogLevelO8rawValueSivg",
                 "moduleName": "AEPServices",
                 "implicit": true,
-                "declAttributes": [
-                  "Inlinable"
-                ],
                 "accessorKind": "get"
               }
             ]
@@ -7181,7 +6702,6 @@
           "ObjC"
         ],
         "enumRawTypeName": "Int",
-        "isEnumExhaustive": true,
         "conformances": [
           {
             "kind": "Conformance",
@@ -7604,7 +7124,6 @@
             "declAttributes": [
               "HasStorage"
             ],
-            "fixedbinaryorder": 0,
             "isLet": true,
             "hasStorage": true,
             "accessors": [
@@ -7633,9 +7152,6 @@
                 "mangledName": "$s11AEPServices14HttpConnectionV4data10Foundation4DataVSgvg",
                 "moduleName": "AEPServices",
                 "implicit": true,
-                "declAttributes": [
-                  "Transparent"
-                ],
                 "accessorKind": "get"
               }
             ]
@@ -7667,7 +7183,6 @@
             "declAttributes": [
               "HasStorage"
             ],
-            "fixedbinaryorder": 1,
             "isLet": true,
             "hasStorage": true,
             "accessors": [
@@ -7696,9 +7211,6 @@
                 "mangledName": "$s11AEPServices14HttpConnectionV8responseSo17NSHTTPURLResponseCSgvg",
                 "moduleName": "AEPServices",
                 "implicit": true,
-                "declAttributes": [
-                  "Transparent"
-                ],
                 "accessorKind": "get"
               }
             ]
@@ -7730,7 +7242,6 @@
             "declAttributes": [
               "HasStorage"
             ],
-            "fixedbinaryorder": 2,
             "isLet": true,
             "hasStorage": true,
             "accessors": [
@@ -7759,9 +7270,6 @@
                 "mangledName": "$s11AEPServices14HttpConnectionV5errors5Error_pSgvg",
                 "moduleName": "AEPServices",
                 "implicit": true,
-                "declAttributes": [
-                  "Transparent"
-                ],
                 "accessorKind": "get"
               }
             ]
@@ -8098,9 +7606,6 @@
                     "moduleName": "AEPServices",
                     "static": true,
                     "implicit": true,
-                    "declAttributes": [
-                      "Transparent"
-                    ],
                     "accessorKind": "get"
                   }
                 ]
@@ -8147,9 +7652,6 @@
                     "moduleName": "AEPServices",
                     "static": true,
                     "implicit": true,
-                    "declAttributes": [
-                      "Transparent"
-                    ],
                     "accessorKind": "get"
                   }
                 ]
@@ -8196,9 +7698,6 @@
                     "moduleName": "AEPServices",
                     "static": true,
                     "implicit": true,
-                    "declAttributes": [
-                      "Transparent"
-                    ],
                     "accessorKind": "get"
                   }
                 ]
@@ -8245,9 +7744,6 @@
                     "moduleName": "AEPServices",
                     "static": true,
                     "implicit": true,
-                    "declAttributes": [
-                      "Transparent"
-                    ],
                     "accessorKind": "get"
                   }
                 ]
@@ -8294,9 +7790,6 @@
                     "moduleName": "AEPServices",
                     "static": true,
                     "implicit": true,
-                    "declAttributes": [
-                      "Transparent"
-                    ],
                     "accessorKind": "get"
                   }
                 ]
@@ -8343,9 +7836,6 @@
                     "moduleName": "AEPServices",
                     "static": true,
                     "implicit": true,
-                    "declAttributes": [
-                      "Transparent"
-                    ],
                     "accessorKind": "get"
                   }
                 ]
@@ -8355,7 +7845,6 @@
             "usr": "s:11AEPServices23HttpConnectionConstantsO13ResponseCodesO",
             "mangledName": "$s11AEPServices23HttpConnectionConstantsO13ResponseCodesO",
             "moduleName": "AEPServices",
-            "isEnumExhaustive": true,
             "conformances": [
               {
                 "kind": "Conformance",
@@ -8420,9 +7909,6 @@
                     "moduleName": "AEPServices",
                     "static": true,
                     "implicit": true,
-                    "declAttributes": [
-                      "Transparent"
-                    ],
                     "accessorKind": "get"
                   }
                 ]
@@ -8469,9 +7955,6 @@
                     "moduleName": "AEPServices",
                     "static": true,
                     "implicit": true,
-                    "declAttributes": [
-                      "Transparent"
-                    ],
                     "accessorKind": "get"
                   }
                 ]
@@ -8518,9 +8001,6 @@
                     "moduleName": "AEPServices",
                     "static": true,
                     "implicit": true,
-                    "declAttributes": [
-                      "Transparent"
-                    ],
                     "accessorKind": "get"
                   }
                 ]
@@ -8567,9 +8047,6 @@
                     "moduleName": "AEPServices",
                     "static": true,
                     "implicit": true,
-                    "declAttributes": [
-                      "Transparent"
-                    ],
                     "accessorKind": "get"
                   }
                 ]
@@ -8616,9 +8093,6 @@
                     "moduleName": "AEPServices",
                     "static": true,
                     "implicit": true,
-                    "declAttributes": [
-                      "Transparent"
-                    ],
                     "accessorKind": "get"
                   }
                 ]
@@ -8665,9 +8139,6 @@
                     "moduleName": "AEPServices",
                     "static": true,
                     "implicit": true,
-                    "declAttributes": [
-                      "Transparent"
-                    ],
                     "accessorKind": "get"
                   }
                 ]
@@ -8677,7 +8148,6 @@
             "usr": "s:11AEPServices23HttpConnectionConstantsO6HeaderO",
             "mangledName": "$s11AEPServices23HttpConnectionConstantsO6HeaderO",
             "moduleName": "AEPServices",
-            "isEnumExhaustive": true,
             "conformances": [
               {
                 "kind": "Conformance",
@@ -8700,7 +8170,6 @@
         "usr": "s:11AEPServices23HttpConnectionConstantsO",
         "mangledName": "$s11AEPServices23HttpConnectionConstantsO",
         "moduleName": "AEPServices",
-        "isEnumExhaustive": true,
         "conformances": [
           {
             "kind": "Conformance",
@@ -8854,9 +8323,6 @@
             "mangledName": "$s11AEPServices10HttpMethodO8rawValueACSgSi_tcfc",
             "moduleName": "AEPServices",
             "implicit": true,
-            "declAttributes": [
-              "Inlinable"
-            ],
             "init_kind": "Designated"
           },
           {
@@ -8894,9 +8360,6 @@
                 "mangledName": "$s11AEPServices10HttpMethodO8rawValueSivg",
                 "moduleName": "AEPServices",
                 "implicit": true,
-                "declAttributes": [
-                  "Inlinable"
-                ],
                 "accessorKind": "get"
               }
             ]
@@ -8911,7 +8374,6 @@
           "ObjC"
         ],
         "enumRawTypeName": "Int",
-        "isEnumExhaustive": true,
         "conformances": [
           {
             "kind": "Conformance",
@@ -8990,7 +8452,6 @@
               "Final",
               "HasStorage"
             ],
-            "fixedbinaryorder": 0,
             "isLet": true,
             "hasStorage": true,
             "accessors": [
@@ -9038,7 +8499,6 @@
               "Final",
               "HasStorage"
             ],
-            "fixedbinaryorder": 1,
             "isLet": true,
             "hasStorage": true,
             "accessors": [
@@ -9086,7 +8546,6 @@
               "Final",
               "HasStorage"
             ],
-            "fixedbinaryorder": 2,
             "isLet": true,
             "hasStorage": true,
             "accessors": [
@@ -9148,7 +8607,6 @@
               "Final",
               "HasStorage"
             ],
-            "fixedbinaryorder": 3,
             "isLet": true,
             "hasStorage": true,
             "accessors": [
@@ -9210,7 +8668,6 @@
               "Final",
               "HasStorage"
             ],
-            "fixedbinaryorder": 4,
             "isLet": true,
             "hasStorage": true,
             "accessors": [
@@ -9258,7 +8715,6 @@
               "Final",
               "HasStorage"
             ],
-            "fixedbinaryorder": 5,
             "isLet": true,
             "hasStorage": true,
             "accessors": [
@@ -9577,13 +9033,12 @@
             "declKind": "EnumElement",
             "usr": "s:11AEPServices19NetworkServiceErrorO10invalidUrlyA2CmF",
             "mangledName": "$s11AEPServices19NetworkServiceErrorO10invalidUrlyA2CmF",
-            "moduleName": "AEPServices",
-            "fixedbinaryorder": 0
+            "moduleName": "AEPServices"
           },
           {
             "kind": "Function",
-            "name": "__derived_enum_equals",
-            "printedName": "__derived_enum_equals(_:_:)",
+            "name": "==",
+            "printedName": "==(_:_:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -9605,14 +9060,11 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:11AEPServices19NetworkServiceErrorO21__derived_enum_equalsySbAC_ACtFZ",
-            "mangledName": "$s11AEPServices19NetworkServiceErrorO21__derived_enum_equalsySbAC_ACtFZ",
+            "usr": "s:11AEPServices19NetworkServiceErrorO2eeoiySbAC_ACtFZ",
+            "mangledName": "$s11AEPServices19NetworkServiceErrorO2eeoiySbAC_ACtFZ",
             "moduleName": "AEPServices",
             "static": true,
             "implicit": true,
-            "declAttributes": [
-              "Implements"
-            ],
             "funcSelfKind": "NonMutating"
           },
           {
@@ -9684,7 +9136,6 @@
         "usr": "s:11AEPServices19NetworkServiceErrorO",
         "mangledName": "$s11AEPServices19NetworkServiceErrorO",
         "moduleName": "AEPServices",
-        "isEnumExhaustive": true,
         "conformances": [
           {
             "kind": "Conformance",
@@ -10011,9 +9462,6 @@
                 "moduleName": "AEPServices",
                 "static": true,
                 "implicit": true,
-                "declAttributes": [
-                  "Transparent"
-                ],
                 "accessorKind": "get"
               }
             ]
@@ -10076,9 +9524,6 @@
                 "moduleName": "AEPServices",
                 "static": true,
                 "implicit": true,
-                "declAttributes": [
-                  "Transparent"
-                ],
                 "accessorKind": "get"
               }
             ]
@@ -10130,9 +9575,6 @@
                     "moduleName": "AEPServices",
                     "static": true,
                     "implicit": true,
-                    "declAttributes": [
-                      "Transparent"
-                    ],
                     "accessorKind": "get"
                   }
                 ]
@@ -10179,9 +9621,6 @@
                     "moduleName": "AEPServices",
                     "static": true,
                     "implicit": true,
-                    "declAttributes": [
-                      "Transparent"
-                    ],
                     "accessorKind": "get"
                   }
                 ]
@@ -10228,9 +9667,6 @@
                     "moduleName": "AEPServices",
                     "static": true,
                     "implicit": true,
-                    "declAttributes": [
-                      "Transparent"
-                    ],
                     "accessorKind": "get"
                   }
                 ]
@@ -10277,9 +9713,6 @@
                     "moduleName": "AEPServices",
                     "static": true,
                     "implicit": true,
-                    "declAttributes": [
-                      "Transparent"
-                    ],
                     "accessorKind": "get"
                   }
                 ]
@@ -10326,9 +9759,6 @@
                     "moduleName": "AEPServices",
                     "static": true,
                     "implicit": true,
-                    "declAttributes": [
-                      "Transparent"
-                    ],
                     "accessorKind": "get"
                   }
                 ]
@@ -10421,9 +9851,6 @@
                     "moduleName": "AEPServices",
                     "static": true,
                     "implicit": true,
-                    "declAttributes": [
-                      "Transparent"
-                    ],
                     "accessorKind": "get"
                   }
                 ]
@@ -10527,9 +9954,6 @@
                 "moduleName": "AEPServices",
                 "static": true,
                 "implicit": true,
-                "declAttributes": [
-                  "Transparent"
-                ],
                 "accessorKind": "get"
               }
             ]
@@ -11053,29 +10477,6 @@
         "printedName": "NamedCollectionDataStore",
         "children": [
           {
-            "kind": "Var",
-            "name": "name",
-            "printedName": "name",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:11AEPServices24NamedCollectionDataStoreC4name33_64A2C820E0B21F7632F6D526FD524063LLSSvp",
-            "mangledName": "$s11AEPServices24NamedCollectionDataStoreC4name33_64A2C820E0B21F7632F6D526FD524063LLSSvp",
-            "moduleName": "AEPServices",
-            "isInternal": true,
-            "declAttributes": [
-              "HasStorage"
-            ],
-            "fixedbinaryorder": 0,
-            "hasStorage": true
-          },
-          {
             "kind": "Constructor",
             "name": "init",
             "printedName": "init(name:)",
@@ -11225,9 +10626,6 @@
                 "moduleName": "AEPServices",
                 "implicit": true,
                 "isOpen": true,
-                "declAttributes": [
-                  "Transparent"
-                ],
                 "accessorKind": "_modify"
               }
             ]
@@ -11444,9 +10842,6 @@
                 "moduleName": "AEPServices",
                 "implicit": true,
                 "isOpen": true,
-                "declAttributes": [
-                  "Transparent"
-                ],
                 "accessorKind": "_modify"
               }
             ]
@@ -11663,9 +11058,6 @@
                 "moduleName": "AEPServices",
                 "implicit": true,
                 "isOpen": true,
-                "declAttributes": [
-                  "Transparent"
-                ],
                 "accessorKind": "_modify"
               }
             ]
@@ -11882,9 +11274,6 @@
                 "moduleName": "AEPServices",
                 "implicit": true,
                 "isOpen": true,
-                "declAttributes": [
-                  "Transparent"
-                ],
                 "accessorKind": "_modify"
               }
             ]
@@ -12101,9 +11490,6 @@
                 "moduleName": "AEPServices",
                 "implicit": true,
                 "isOpen": true,
-                "declAttributes": [
-                  "Transparent"
-                ],
                 "accessorKind": "_modify"
               }
             ]
@@ -12358,9 +11744,6 @@
                 "moduleName": "AEPServices",
                 "implicit": true,
                 "isOpen": true,
-                "declAttributes": [
-                  "Transparent"
-                ],
                 "accessorKind": "_modify"
               }
             ]
@@ -12560,9 +11943,6 @@
                 "moduleName": "AEPServices",
                 "implicit": true,
                 "isOpen": true,
-                "declAttributes": [
-                  "Transparent"
-                ],
                 "accessorKind": "_modify"
               }
             ]
@@ -12839,9 +12219,6 @@
                 "moduleName": "AEPServices",
                 "implicit": true,
                 "isOpen": true,
-                "declAttributes": [
-                  "Transparent"
-                ],
                 "accessorKind": "_modify"
               }
             ]
@@ -13102,9 +12479,6 @@
                 "sugared_genericSig": "<T where T : Swift.Decodable, T : Swift.Encodable>",
                 "implicit": true,
                 "isOpen": true,
-                "declAttributes": [
-                  "Transparent"
-                ],
                 "accessorKind": "_modify"
               }
             ]
@@ -14155,7 +13529,6 @@
               "Final",
               "HasStorage"
             ],
-            "fixedbinaryorder": 0,
             "isLet": true,
             "hasStorage": true,
             "accessors": [
@@ -14389,29 +13762,6 @@
                 "accessorKind": "get"
               }
             ]
-          },
-          {
-            "kind": "Var",
-            "name": "_value",
-            "printedName": "_value",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "ProtocolComposition",
-                "printedName": "Any"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:11AEPServices10AnyCodableV6_value33_40D2F242DDC3581E5B76ED1945C7237FLLypvp",
-            "mangledName": "$s11AEPServices10AnyCodableV6_value33_40D2F242DDC3581E5B76ED1945C7237FLLypvp",
-            "moduleName": "AEPServices",
-            "isInternal": true,
-            "declAttributes": [
-              "HasStorage"
-            ],
-            "fixedbinaryorder": 0,
-            "isLet": true,
-            "hasStorage": true
           },
           {
             "kind": "Var",
@@ -15655,56 +15005,6 @@
         "printedName": "AtomicCounter",
         "children": [
           {
-            "kind": "Var",
-            "name": "count",
-            "printedName": "count",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Int",
-                "printedName": "Swift.Int",
-                "usr": "s:Si"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:11AEPServices13AtomicCounterC5count33_04BA26A02FDFDD474E9C083D088BD4A0LLSivp",
-            "mangledName": "$s11AEPServices13AtomicCounterC5count33_04BA26A02FDFDD474E9C083D088BD4A0LLSivp",
-            "moduleName": "AEPServices",
-            "isInternal": true,
-            "declAttributes": [
-              "HasInitialValue",
-              "Final",
-              "HasStorage"
-            ],
-            "fixedbinaryorder": 0,
-            "hasStorage": true
-          },
-          {
-            "kind": "Var",
-            "name": "lock",
-            "printedName": "lock",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "DispatchSemaphore",
-                "printedName": "Dispatch.DispatchSemaphore",
-                "usr": "c:objc(cs)OS_dispatch_semaphore"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:11AEPServices13AtomicCounterC4lock33_04BA26A02FDFDD474E9C083D088BD4A0LLSo21OS_dispatch_semaphoreCvp",
-            "mangledName": "$s11AEPServices13AtomicCounterC4lock33_04BA26A02FDFDD474E9C083D088BD4A0LLSo21OS_dispatch_semaphoreCvp",
-            "moduleName": "AEPServices",
-            "isInternal": true,
-            "declAttributes": [
-              "HasInitialValue",
-              "Final",
-              "HasStorage"
-            ],
-            "fixedbinaryorder": 1,
-            "hasStorage": true
-          },
-          {
             "kind": "Constructor",
             "name": "init",
             "printedName": "init()",
@@ -15794,155 +15094,6 @@
         "name": "OperationOrderer",
         "printedName": "OperationOrderer",
         "children": [
-          {
-            "kind": "Var",
-            "name": "source",
-            "printedName": "source",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "DispatchSourceUserDataOr",
-                "printedName": "any Dispatch.DispatchSourceUserDataOr",
-                "usr": "c:objc(pl)OS_dispatch_source_data_or"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:11AEPServices16OperationOrdererC6source33_0F3002D2802B3BC91D6EEC974D4BCC05LLSo012OS_dispatch_D8_data_or_pvp",
-            "mangledName": "$s11AEPServices16OperationOrdererC6source33_0F3002D2802B3BC91D6EEC974D4BCC05LLSo012OS_dispatch_D8_data_or_pvp",
-            "moduleName": "AEPServices",
-            "isInternal": true,
-            "declAttributes": [
-              "Final",
-              "HasStorage"
-            ],
-            "fixedbinaryorder": 0,
-            "isLet": true,
-            "hasStorage": true
-          },
-          {
-            "kind": "Var",
-            "name": "queue",
-            "printedName": "queue",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "DispatchQueue",
-                "printedName": "Dispatch.DispatchQueue",
-                "usr": "c:objc(cs)OS_dispatch_queue"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:11AEPServices16OperationOrdererC5queue33_0F3002D2802B3BC91D6EEC974D4BCC05LLSo012OS_dispatch_D0Cvp",
-            "mangledName": "$s11AEPServices16OperationOrdererC5queue33_0F3002D2802B3BC91D6EEC974D4BCC05LLSo012OS_dispatch_D0Cvp",
-            "moduleName": "AEPServices",
-            "isInternal": true,
-            "declAttributes": [
-              "Final",
-              "HasStorage"
-            ],
-            "fixedbinaryorder": 1,
-            "isLet": true,
-            "hasStorage": true
-          },
-          {
-            "kind": "Var",
-            "name": "handler",
-            "printedName": "handler",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "((τ_0_0) -> Swift.Bool)?",
-                "children": [
-                  {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "(τ_0_0) -> Swift.Bool",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Bool",
-                        "printedName": "Swift.Bool",
-                        "usr": "s:Sb"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "GenericTypeParam",
-                        "printedName": "τ_0_0"
-                      }
-                    ]
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:11AEPServices16OperationOrdererC7handler33_0F3002D2802B3BC91D6EEC974D4BCC05LLSbxcSgvp",
-            "mangledName": "$s11AEPServices16OperationOrdererC7handler33_0F3002D2802B3BC91D6EEC974D4BCC05LLSbxcSgvp",
-            "moduleName": "AEPServices",
-            "isInternal": true,
-            "declAttributes": [
-              "HasInitialValue",
-              "HasStorage"
-            ],
-            "fixedbinaryorder": 2,
-            "hasStorage": true
-          },
-          {
-            "kind": "Var",
-            "name": "array",
-            "printedName": "array",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Array",
-                "printedName": "[τ_0_0]",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "GenericTypeParam",
-                    "printedName": "τ_0_0"
-                  }
-                ],
-                "usr": "s:Sa"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:11AEPServices16OperationOrdererC5array33_0F3002D2802B3BC91D6EEC974D4BCC05LLSayxGvp",
-            "mangledName": "$s11AEPServices16OperationOrdererC5array33_0F3002D2802B3BC91D6EEC974D4BCC05LLSayxGvp",
-            "moduleName": "AEPServices",
-            "isInternal": true,
-            "declAttributes": [
-              "HasInitialValue",
-              "HasStorage"
-            ],
-            "fixedbinaryorder": 3,
-            "hasStorage": true
-          },
-          {
-            "kind": "Var",
-            "name": "active",
-            "printedName": "active",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:11AEPServices16OperationOrdererC6active33_0F3002D2802B3BC91D6EEC974D4BCC05LLSbvp",
-            "mangledName": "$s11AEPServices16OperationOrdererC6active33_0F3002D2802B3BC91D6EEC974D4BCC05LLSbvp",
-            "moduleName": "AEPServices",
-            "isInternal": true,
-            "declAttributes": [
-              "HasInitialValue",
-              "HasStorage"
-            ],
-            "fixedbinaryorder": 4,
-            "hasStorage": true
-          },
           {
             "kind": "Constructor",
             "name": "init",
@@ -16215,7 +15366,6 @@
         "usr": "s:11AEPServices16PrettyDictionaryO",
         "mangledName": "$s11AEPServices16PrettyDictionaryO",
         "moduleName": "AEPServices",
-        "isEnumExhaustive": true,
         "conformances": [
           {
             "kind": "Conformance",
@@ -16238,62 +15388,6 @@
         "name": "ThreadSafeArray",
         "printedName": "ThreadSafeArray",
         "children": [
-          {
-            "kind": "Var",
-            "name": "array",
-            "printedName": "array",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Array",
-                "printedName": "[τ_0_0]",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "GenericTypeParam",
-                    "printedName": "τ_0_0"
-                  }
-                ],
-                "usr": "s:Sa"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:11AEPServices15ThreadSafeArrayC5array33_46CB6C84D01F4247344CA5B05CAC7F11LLSayxGvp",
-            "mangledName": "$s11AEPServices15ThreadSafeArrayC5array33_46CB6C84D01F4247344CA5B05CAC7F11LLSayxGvp",
-            "moduleName": "AEPServices",
-            "isInternal": true,
-            "declAttributes": [
-              "HasInitialValue",
-              "Final",
-              "HasStorage"
-            ],
-            "fixedbinaryorder": 0,
-            "hasStorage": true
-          },
-          {
-            "kind": "Var",
-            "name": "queue",
-            "printedName": "queue",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "DispatchQueue",
-                "printedName": "Dispatch.DispatchQueue",
-                "usr": "c:objc(cs)OS_dispatch_queue"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:11AEPServices15ThreadSafeArrayC5queue33_46CB6C84D01F4247344CA5B05CAC7F11LLSo012OS_dispatch_E0Cvp",
-            "mangledName": "$s11AEPServices15ThreadSafeArrayC5queue33_46CB6C84D01F4247344CA5B05CAC7F11LLSo012OS_dispatch_E0Cvp",
-            "moduleName": "AEPServices",
-            "isInternal": true,
-            "declAttributes": [
-              "Final",
-              "HasStorage"
-            ],
-            "fixedbinaryorder": 1,
-            "hasStorage": true
-          },
           {
             "kind": "Constructor",
             "name": "init",
@@ -16669,8 +15763,7 @@
                 "sugared_genericSig": "<T>",
                 "implicit": true,
                 "declAttributes": [
-                  "Final",
-                  "Transparent"
+                  "Final"
                 ],
                 "accessorKind": "_modify"
               }
@@ -16794,7 +15887,6 @@
               "UsableFromInline",
               "HasStorage"
             ],
-            "fixedbinaryorder": 0,
             "hasStorage": true,
             "accessors": [
               {
@@ -16829,8 +15921,7 @@
                 "sugared_genericSig": "<K, V where K : Swift.Hashable>",
                 "implicit": true,
                 "declAttributes": [
-                  "Final",
-                  "Transparent"
+                  "Final"
                 ],
                 "accessorKind": "get"
               },
@@ -16871,8 +15962,7 @@
                 "sugared_genericSig": "<K, V where K : Swift.Hashable>",
                 "implicit": true,
                 "declAttributes": [
-                  "Final",
-                  "Transparent"
+                  "Final"
                 ],
                 "accessorKind": "set"
               },
@@ -16895,8 +15985,7 @@
                 "sugared_genericSig": "<K, V where K : Swift.Hashable>",
                 "implicit": true,
                 "declAttributes": [
-                  "Final",
-                  "Transparent"
+                  "Final"
                 ],
                 "accessorKind": "_modify"
               }
@@ -16923,7 +16012,6 @@
               "UsableFromInline",
               "HasStorage"
             ],
-            "fixedbinaryorder": 1,
             "isLet": true,
             "hasStorage": true,
             "accessors": [
@@ -16947,8 +16035,7 @@
                 "sugared_genericSig": "<K, V where K : Swift.Hashable>",
                 "implicit": true,
                 "declAttributes": [
-                  "Final",
-                  "Transparent"
+                  "Final"
                 ],
                 "accessorKind": "get"
               }
@@ -17299,8 +16386,7 @@
                 "sugared_genericSig": "<K, V where K : Swift.Hashable>",
                 "implicit": true,
                 "declAttributes": [
-                  "Final",
-                  "Transparent"
+                  "Final"
                 ],
                 "accessorKind": "_modify"
               }
@@ -17874,7 +16960,6 @@
               "Final",
               "HasStorage"
             ],
-            "fixedbinaryorder": 0,
             "isLet": true,
             "hasStorage": true,
             "accessors": [
@@ -17896,8 +16981,7 @@
                 "moduleName": "AEPServices",
                 "implicit": true,
                 "declAttributes": [
-                  "Final",
-                  "Transparent"
+                  "Final"
                 ],
                 "accessorKind": "get"
               }
@@ -17923,7 +17007,6 @@
               "Final",
               "HasStorage"
             ],
-            "fixedbinaryorder": 1,
             "isLet": true,
             "hasStorage": true,
             "accessors": [
@@ -17950,80 +17033,6 @@
                 "accessorKind": "get"
               }
             ]
-          },
-          {
-            "kind": "Var",
-            "name": "suspended",
-            "printedName": "suspended",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:11AEPServices18PersistentHitQueueC9suspended33_B8609AAEF0FC9D992E8CAC252036A882LLSbvp",
-            "mangledName": "$s11AEPServices18PersistentHitQueueC9suspended33_B8609AAEF0FC9D992E8CAC252036A882LLSbvp",
-            "moduleName": "AEPServices",
-            "isInternal": true,
-            "declAttributes": [
-              "HasInitialValue",
-              "HasStorage"
-            ],
-            "fixedbinaryorder": 2,
-            "hasStorage": true
-          },
-          {
-            "kind": "Var",
-            "name": "isTaskScheduled",
-            "printedName": "isTaskScheduled",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:11AEPServices18PersistentHitQueueC15isTaskScheduled33_B8609AAEF0FC9D992E8CAC252036A882LLSbvp",
-            "mangledName": "$s11AEPServices18PersistentHitQueueC15isTaskScheduled33_B8609AAEF0FC9D992E8CAC252036A882LLSbvp",
-            "moduleName": "AEPServices",
-            "isInternal": true,
-            "declAttributes": [
-              "HasInitialValue",
-              "HasStorage"
-            ],
-            "fixedbinaryorder": 3,
-            "hasStorage": true
-          },
-          {
-            "kind": "Var",
-            "name": "queue",
-            "printedName": "queue",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "DispatchQueue",
-                "printedName": "Dispatch.DispatchQueue",
-                "usr": "c:objc(cs)OS_dispatch_queue"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:11AEPServices18PersistentHitQueueC5queue33_B8609AAEF0FC9D992E8CAC252036A882LLSo012OS_dispatch_E0Cvp",
-            "mangledName": "$s11AEPServices18PersistentHitQueueC5queue33_B8609AAEF0FC9D992E8CAC252036A882LLSo012OS_dispatch_E0Cvp",
-            "moduleName": "AEPServices",
-            "isInternal": true,
-            "declAttributes": [
-              "HasInitialValue",
-              "Final",
-              "HasStorage"
-            ],
-            "fixedbinaryorder": 4,
-            "isLet": true,
-            "hasStorage": true
           },
           {
             "kind": "Constructor",
@@ -18209,32 +17218,6 @@
         "name": "FileUnzipper",
         "printedName": "FileUnzipper",
         "children": [
-          {
-            "kind": "Var",
-            "name": "LOG_PREFIX",
-            "printedName": "LOG_PREFIX",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:11AEPServices12FileUnzipperC10LOG_PREFIX33_EA669870707F3B2202F40D1BD282A537LLSSvp",
-            "mangledName": "$s11AEPServices12FileUnzipperC10LOG_PREFIX33_EA669870707F3B2202F40D1BD282A537LLSSvp",
-            "moduleName": "AEPServices",
-            "isInternal": true,
-            "declAttributes": [
-              "HasInitialValue",
-              "Final",
-              "HasStorage"
-            ],
-            "fixedbinaryorder": 0,
-            "isLet": true,
-            "hasStorage": true
-          },
           {
             "kind": "Constructor",
             "name": "init",
@@ -19278,8 +18261,8 @@
               },
               {
                 "kind": "Function",
-                "name": "__derived_enum_equals",
-                "printedName": "__derived_enum_equals(_:_:)",
+                "name": "==",
+                "printedName": "==(_:_:)",
                 "children": [
                   {
                     "kind": "TypeNominal",
@@ -19301,14 +18284,11 @@
                   }
                 ],
                 "declKind": "Func",
-                "usr": "s:11AEPServices10ZipArchiveC9DataErrorO21__derived_enum_equalsySbAE_AEtFZ",
-                "mangledName": "$s11AEPServices10ZipArchiveC9DataErrorO21__derived_enum_equalsySbAE_AEtFZ",
+                "usr": "s:11AEPServices10ZipArchiveC9DataErrorO2eeoiySbAE_AEtFZ",
+                "mangledName": "$s11AEPServices10ZipArchiveC9DataErrorO2eeoiySbAE_AEtFZ",
                 "moduleName": "AEPServices",
                 "static": true,
                 "implicit": true,
-                "declAttributes": [
-                  "Implements"
-                ],
                 "funcSelfKind": "NonMutating"
               },
               {
@@ -19478,8 +18458,8 @@
               },
               {
                 "kind": "Function",
-                "name": "__derived_enum_equals",
-                "printedName": "__derived_enum_equals(_:_:)",
+                "name": "==",
+                "printedName": "==(_:_:)",
                 "children": [
                   {
                     "kind": "TypeNominal",
@@ -19501,14 +18481,11 @@
                   }
                 ],
                 "declKind": "Func",
-                "usr": "s:11AEPServices10ZipArchiveC0C5ErrorO21__derived_enum_equalsySbAE_AEtFZ",
-                "mangledName": "$s11AEPServices10ZipArchiveC0C5ErrorO21__derived_enum_equalsySbAE_AEtFZ",
+                "usr": "s:11AEPServices10ZipArchiveC0C5ErrorO2eeoiySbAE_AEtFZ",
+                "mangledName": "$s11AEPServices10ZipArchiveC0C5ErrorO2eeoiySbAE_AEtFZ",
                 "moduleName": "AEPServices",
                 "static": true,
                 "implicit": true,
-                "declAttributes": [
-                  "Implements"
-                ],
                 "funcSelfKind": "NonMutating"
               },
               {
@@ -19742,8 +18719,8 @@
               },
               {
                 "kind": "Function",
-                "name": "__derived_enum_equals",
-                "printedName": "__derived_enum_equals(_:_:)",
+                "name": "==",
+                "printedName": "==(_:_:)",
                 "children": [
                   {
                     "kind": "TypeNominal",
@@ -19765,14 +18742,11 @@
                   }
                 ],
                 "declKind": "Func",
-                "usr": "s:11AEPServices10ZipArchiveC18DecompressionErrorO21__derived_enum_equalsySbAE_AEtFZ",
-                "mangledName": "$s11AEPServices10ZipArchiveC18DecompressionErrorO21__derived_enum_equalsySbAE_AEtFZ",
+                "usr": "s:11AEPServices10ZipArchiveC18DecompressionErrorO2eeoiySbAE_AEtFZ",
+                "mangledName": "$s11AEPServices10ZipArchiveC18DecompressionErrorO2eeoiySbAE_AEtFZ",
                 "moduleName": "AEPServices",
                 "static": true,
                 "implicit": true,
-                "declAttributes": [
-                  "Implements"
-                ],
                 "funcSelfKind": "NonMutating"
               },
               {

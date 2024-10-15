@@ -60,52 +60,6 @@
         "children": [
           {
             "kind": "Var",
-            "name": "lifecycleState",
-            "printedName": "lifecycleState",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "LifecycleState",
-                "printedName": "AEPLifecycle.LifecycleState",
-                "usr": "s:12AEPLifecycle14LifecycleStateV"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:12AEPLifecycle9LifecycleC14lifecycleState33_6F54F92F6141D8A9C446273B9324AB2CLLAA0bD0Vvp",
-            "mangledName": "$s12AEPLifecycle9LifecycleC14lifecycleState33_6F54F92F6141D8A9C446273B9324AB2CLLAA0bD0Vvp",
-            "moduleName": "AEPLifecycle",
-            "isInternal": true,
-            "declAttributes": [
-              "HasStorage"
-            ],
-            "fixedbinaryorder": 0,
-            "hasStorage": true
-          },
-          {
-            "kind": "Var",
-            "name": "lifecycleV2",
-            "printedName": "lifecycleV2",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "LifecycleV2",
-                "printedName": "AEPLifecycle.LifecycleV2",
-                "usr": "s:12AEPLifecycle11LifecycleV2C"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:12AEPLifecycle9LifecycleC11lifecycleV233_6F54F92F6141D8A9C446273B9324AB2CLLAA0bD0Cvp",
-            "mangledName": "$s12AEPLifecycle9LifecycleC11lifecycleV233_6F54F92F6141D8A9C446273B9324AB2CLLAA0bD0Cvp",
-            "moduleName": "AEPLifecycle",
-            "isInternal": true,
-            "declAttributes": [
-              "HasStorage"
-            ],
-            "fixedbinaryorder": 1,
-            "hasStorage": true
-          },
-          {
-            "kind": "Var",
             "name": "name",
             "printedName": "name",
             "children": [
@@ -127,7 +81,6 @@
               "ObjC",
               "HasStorage"
             ],
-            "fixedbinaryorder": 2,
             "isLet": true,
             "hasStorage": true,
             "accessors": [
@@ -180,7 +133,6 @@
               "ObjC",
               "HasStorage"
             ],
-            "fixedbinaryorder": 3,
             "isLet": true,
             "hasStorage": true,
             "accessors": [
@@ -309,7 +261,6 @@
               "ObjC",
               "HasStorage"
             ],
-            "fixedbinaryorder": 4,
             "isLet": true,
             "hasStorage": true,
             "accessors": [
@@ -383,7 +334,6 @@
               "ObjC",
               "HasStorage"
             ],
-            "fixedbinaryorder": 5,
             "isLet": true,
             "hasStorage": true,
             "accessors": [
@@ -6255,8 +6205,8 @@
           },
           {
             "kind": "Function",
-            "name": "__derived_struct_equals",
-            "printedName": "__derived_struct_equals(_:_:)",
+            "name": "==",
+            "printedName": "==(_:_:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -6278,14 +6228,11 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:12AEPLifecycle16LifecycleMetricsV23__derived_struct_equalsySbAC_ACtFZ",
-            "mangledName": "$s12AEPLifecycle16LifecycleMetricsV23__derived_struct_equalsySbAC_ACtFZ",
+            "usr": "s:12AEPLifecycle16LifecycleMetricsV2eeoiySbAC_ACtFZ",
+            "mangledName": "$s12AEPLifecycle16LifecycleMetricsV2eeoiySbAC_ACtFZ",
             "moduleName": "AEPLifecycle",
             "static": true,
             "implicit": true,
-            "declAttributes": [
-              "Implements"
-            ],
             "funcSelfKind": "NonMutating"
           },
           {
