@@ -21397,12 +21397,15 @@
                     "printedName": "AEPCore.Event",
                     "usr": "c:@M@AEPCore@objc(cs)AEPEvent"
                   }
+                ],
+                "typeAttributes": [
+                  "noescape"
                 ]
               }
             ],
             "declKind": "Func",
-            "usr": "s:7AEPCore18ExtensionContainerC16registerListener4type6source8listenerySS_SSyAA5EventCctF",
-            "mangledName": "$s7AEPCore18ExtensionContainerC16registerListener4type6source8listenerySS_SSyAA5EventCctF",
+            "usr": "s:7AEPCore18ExtensionContainerC16registerListener4type6source8listenerySS_SSyAA5EventCXEtF",
+            "mangledName": "$s7AEPCore18ExtensionContainerC16registerListener4type6source8listenerySS_SSyAA5EventCXEtF",
             "moduleName": "AEPCore",
             "isOpen": true,
             "objc_name": "registerListenerWithType:source:listener:",
@@ -22246,12 +22249,15 @@
                     "printedName": "AEPCore.Event",
                     "usr": "c:@M@AEPCore@objc(cs)AEPEvent"
                   }
+                ],
+                "typeAttributes": [
+                  "noescape"
                 ]
               }
             ],
             "declKind": "Func",
             "usr": "c:@M@AEPCore@objc(pl)AEPExtensionRuntime(im)registerListenerWithType:source:listener:",
-            "mangledName": "$s7AEPCore16ExtensionRuntimeP16registerListener4type6source8listenerySS_SSyAA5EventCctF",
+            "mangledName": "$s7AEPCore16ExtensionRuntimeP16registerListener4type6source8listenerySS_SSyAA5EventCXEtF",
             "moduleName": "AEPCore",
             "genericSig": "<τ_0_0 where τ_0_0 : AEPCore.ExtensionRuntime>",
             "sugared_genericSig": "<Self where Self : AEPCore.ExtensionRuntime>",
