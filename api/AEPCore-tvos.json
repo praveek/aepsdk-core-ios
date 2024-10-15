@@ -10800,6 +10800,72 @@
           },
           {
             "kind": "Var",
+            "name": "newMember",
+            "printedName": "newMember",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.UUID?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UUID",
+                    "printedName": "Foundation.UUID",
+                    "usr": "s:10Foundation4UUIDV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@AEPCore@objc(cs)AEPEvent(py)newMember",
+            "mangledName": "$s7AEPCore5EventC9newMember10Foundation4UUIDVSgvp",
+            "moduleName": "AEPCore",
+            "isOpen": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "ObjC",
+              "SetterAccess",
+              "HasStorage"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Foundation.UUID?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UUID",
+                        "printedName": "Foundation.UUID",
+                        "usr": "s:10Foundation4UUIDV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AEPCore@objc(cs)AEPEvent(im)newMember",
+                "mangledName": "$s7AEPCore5EventC9newMember10Foundation4UUIDVSgvg",
+                "moduleName": "AEPCore",
+                "implicit": true,
+                "isOpen": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "description",
             "printedName": "description",
             "children": [
