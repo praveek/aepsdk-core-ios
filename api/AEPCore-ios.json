@@ -8251,7 +8251,6 @@
                     ]
                   }
                 ],
-                "hasDefaultArg": true,
                 "usr": "s:Sq"
               }
             ],
@@ -8318,11 +8317,11 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@AEPCore@objc(cs)AEPMobileCore(cm)unregisterExtension:completion:",
+            "usr": "c:@M@AEPCore@objc(cs)AEPMobileCore(cm)unRegisterExtension:completion:",
             "mangledName": "$s7AEPCore10MobileCoreC19unregisterExtensionyyAA0E0_pXp_yycSgtFZ",
             "moduleName": "AEPCore",
             "static": true,
-            "objc_name": "unregisterExtension:completion:",
+            "objc_name": "unRegisterExtension:completion:",
             "declAttributes": [
               "Final",
               "ObjC"
